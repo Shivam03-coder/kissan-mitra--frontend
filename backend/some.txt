@@ -1,0 +1,12 @@
+Requests (run in terminal, besides flask)
+
+curl -X POST -H "Content-Type: application/json" -d '{"nitrogen": 50, "phosphorous": 50, "pottasium": 50, "ph": 7, "rainfall": 200, "city": "Bhopal"}' http://127.0.0.1:5000/crop-predict
+
+
+curl -X POST -F 'file=@static/images/some.jpg' http://127.0.0.1:5000/disease-predict
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"nitrogen": 50, "phosphorous": 50, "pottasium": 50, "cropname": "rice"}' http://127.0.0.1:5000/fertilizer-predict
+
+
+
