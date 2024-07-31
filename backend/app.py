@@ -243,10 +243,10 @@ def fert_recommend():
 def disease_prediction():
     if request.method == 'POST':
         if 'file' not in request.files:
-            return jsonify("error": "some error msg"), 400
+            return jsonify({"error": "some error msg"}), 400
         file = request.files.get('file')
         if not file:
-            jsonify("error": "some error msg"), 400
+            jsonify({"error": "some error msg"}), 400
         try:
             img = file.read()
 

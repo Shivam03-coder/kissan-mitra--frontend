@@ -1,0 +1,54 @@
+name: harvestify
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - ca-certificates=2024.7.2=h06a4308_0
+  - certifi=2021.5.30=py36h06a4308_0
+  - ld_impl_linux-64=2.38=h1181459_1
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - ncurses=6.4=h6a678d5_0
+  - openssl=1.1.1w=h7f8727e_0
+  - pip=21.2.2=py36h06a4308_0
+  - python=3.6.12=hcff3b4d_2
+  - readline=8.2=h5eee18b_0
+  - setuptools=58.0.4=py36h06a4308_0
+  - sqlite=3.45.3=h5eee18b_0
+  - tk=8.6.14=h39e8969_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.4.6=h5eee18b_1
+  - zlib=1.2.13=h5eee18b_1
+  - pip:
+      - charset-normalizer==2.0.12
+      - click==8.0.4
+      - dataclasses==0.8
+      - flask==2.0.3
+      - future==1.0.0
+      - gunicorn==20.0.4
+      - idna==3.7
+      - importlib-metadata==4.8.3
+      - itsdangerous==2.0.1
+      - jinja2==3.0.3
+      - joblib==1.1.1
+      - markupsafe==2.0.1
+      - numpy==1.19.5
+      - pandas==1.1.5
+      - pillow==8.4.0
+      - python-dateutil==2.9.0.post0
+      - pytz==2024.1
+      - requests==2.27.1
+      - scikit-learn==0.24.2
+      - scipy==1.5.4
+      - six==1.16.0
+      - threadpoolctl==3.1.0
+      - torch==1.7.0+cpu
+      - torchvision==0.8.1+cpu
+      - typing-extensions==4.1.1
+      - urllib3==1.26.19
+      - werkzeug==2.0.3
+      - zipp==3.6.0
+prefix: /opt/conda/envs/harvestify
