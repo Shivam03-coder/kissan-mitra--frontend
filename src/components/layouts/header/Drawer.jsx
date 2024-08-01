@@ -16,24 +16,38 @@ export function MobileviewDrawer({ Draweropen, setDraweropen }) {
 
   return createPortal(
     <Drawer
-      className="!bg-pastelGreen-500"
+      className="!bg-white"
       open={Draweropen}
       onClose={closeDrawer}
     >
-      <div className="mb-2 flex h-full top-0  flex-col !bg-pastelGreen-500 p-4">
-        <div className="flex justify-center  items-center gap-5">
-          <Typography variant="h4" className="text-center">
+      <div className="flex flex-col h-full p-4 bg-white">
+        <div className="flex justify-between items-center mb-6">
+          <Typography variant="h4" className="text-black font-bold">
             KISSAN MITRA
           </Typography>
-          <IconButton variant="text" onClick={closeDrawer}>
-            <IoMdClose className="size-9" />
+          <IconButton
+            variant="text"
+            onClick={closeDrawer}
+            aria-label="Close drawer"
+          >
+            <IoMdClose className="text-gray-800 size-9" />
           </IconButton>
         </div>
-        <div className="px-9 my-5">
-          <Navlist />
-          <Button className="mt-3 rounded-3xl shadow-2xl text-black text-base bg-honeysuckle-600" size="sm">
-            SIGN IN
-          </Button>
+
+        <div className="flex-1 flex flex-col">
+          <Navlist className="flex flex-col gap-4 mb-6" />
+          
+          <div className="flex-grow" />
+
+          <div className="px-6 mb-6">
+            <Button
+              variant="outlined"
+              className="w-full rounded-3xl shadow-md text-white bg-pastelGreen-400 text-lg text-black"
+              size="sm"
+            >
+              SIGN IN
+            </Button>
+          </div>
         </div>
       </div>
     </Drawer>,

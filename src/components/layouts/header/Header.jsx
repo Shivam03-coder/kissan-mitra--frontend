@@ -6,7 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Navlist } from "./Navlist";
-import { Applogo, IoMdClose, HiOutlineMenu } from "../../../constants";
+import { Applogo, IoMdClose, CiMenuFries } from "../../../constants";
 import { MobileviewDrawer } from "./Drawer";
 
 export function Header({ Draweropen, isMobileview, setDraweropen }) {
@@ -44,7 +44,7 @@ export function Header({ Draweropen, isMobileview, setDraweropen }) {
             onClick={() => setDraweropen(!Draweropen)}
           >
             {isMobileview ? (
-              <HiOutlineMenu className="size-9 font-bold" />
+              <CiMenuFries className="size-7 font-extrabold" />
             ) : (
               <IoMdClose className="size-9 font-bold" />
             )}

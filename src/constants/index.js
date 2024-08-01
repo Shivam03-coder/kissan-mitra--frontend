@@ -18,8 +18,8 @@ export const cropsimage = crops;
 
 // ICONS
 import { IoMdClose } from "react-icons/io";
-import { HiOutlineMenu } from "react-icons/hi";
+import { CiMenuFries } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export { IoMdClose, HiOutlineMenu, FaStar , FaArrowRightLong};
+export { IoMdClose, CiMenuFries, FaStar , FaArrowRightLong};
