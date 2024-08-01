@@ -42,7 +42,7 @@ export function MobileviewDrawer({ Draweropen, setDraweropen }) {
           <div className="px-6 mb-6">
             <Button
               variant="outlined"
-              className="w-full rounded-3xl shadow-md text-white bg-pastelGreen-400 text-lg text-black"
+              className="w-full rounded-3xl shadow-md  bg-pastelGreen-400 text-lg text-black"
               size="sm"
             >
               SIGN IN
