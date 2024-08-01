@@ -5,11 +5,11 @@ import { Store } from "./redux/store";
 
 function Appcontainer() {
   return (
-    <div>
+    <>
       <Provider store={Store}>
         <App />
       </Provider>
-    </div>
+    </>
   );
 }
 

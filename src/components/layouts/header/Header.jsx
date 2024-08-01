@@ -11,7 +11,7 @@ import { MobileviewDrawer } from "./Drawer";
 
 export function Header({ Draweropen, isMobileview, setDraweropen }) {
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 bg-pastelGreen-500 border-none shadow-none lg:py-3">
+    <Navbar className="h-max max-w-full rounded-none px-4 py-2 lg:px-8 bg-pastelGreen-500 border-none shadow-none lg:py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex gap-2">
           <img src={Applogo} alt="Applogo" />

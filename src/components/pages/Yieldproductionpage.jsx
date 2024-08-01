@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Yeildproductionpage = () => {
+export default function Yieldproductionpage() {
   return (
     <div>
       
     </div>
   )
 }
-
-export default Yeildproductionpage

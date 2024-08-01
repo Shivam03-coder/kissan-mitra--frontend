@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Header } from "../layouts/header/Header";
 import useMediaquery from "../../hooks/usemediaQuery";
+import Maincontetnt from "../layouts/home/Maincontetnt";
 
 function Homepage() {
   const [Draweropen, setDraweropen] = useState(false);
@@ -13,6 +14,7 @@ function Homepage() {
         isMobileview={isMobileview}
         setDraweropen={setDraweropen}
       />
+      <Maincontetnt />
     </>
   );
 }

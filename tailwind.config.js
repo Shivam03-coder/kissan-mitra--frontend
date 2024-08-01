@@ -61,6 +61,8 @@ export default withMT({
         900: "#795800",
         950: "#5D4400",
       },
+      darken: "rgba(0,0,0,0.7)",
+      fadedarken: "rgba(0,0,0,0.6)",
     },
 
     fontFamily: {
