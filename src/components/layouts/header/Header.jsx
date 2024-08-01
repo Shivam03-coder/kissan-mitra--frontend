@@ -11,7 +11,7 @@ import { MobileviewDrawer } from "./Drawer";
 
 export function Header({ Draweropen, isMobileview, setDraweropen }) {
   return (
-    <Navbar className="h-max max-w-full rounded-none px-4 py-2 lg:px-8 bg-pastelGreen-500 border-none shadow-none lg:py-3">
+    <Navbar className="h-max max-w-full rounded-none px-4 py-2 lg:px-8 bg-transparent border-none shadow-none lg:py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex gap-2">
           <img src={Applogo} alt="Applogo" />
@@ -30,8 +30,9 @@ export function Header({ Draweropen, isMobileview, setDraweropen }) {
           </div>
           <div className="flex items-center gap-x-1">
             <Button
-              size="md"
-              className="rounded-3xl hidden md:block lg:inline-block text-black text-base bg-honeysuckle-600"
+              size="sm"
+              variant="outlined"
+              className="rounded-3xl hidden md:block lg:inline-block text-black text-base bg-pastelGreen-400 transition-all duration-700 "
             >
               <span>Sign in</span>
             </Button>
@@ -49,7 +50,12 @@ export function Header({ Draweropen, isMobileview, setDraweropen }) {
             )}
           </IconButton>
         </div>
-        {isMobileview && <MobileviewDrawer Draweropen={Draweropen} setDraweropen={setDraweropen} />}
+        {isMobileview && (
+          <MobileviewDrawer
+            Draweropen={Draweropen}
+            setDraweropen={setDraweropen}
+          />
+        )}
       </div>
     </Navbar>
   );

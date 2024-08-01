@@ -39,18 +39,26 @@ const Carddata = [
 
 function Propsection() {
   return (
-    <div className="flex-center gap-10 bg-pastelGreen-400 py-8 flex-wrap">
-      {Carddata.map(({ id, img, label }, i) => (
-        <Card key={id} className="mt-6 w-40 md:w-60 flex-center">
-          <CardBody>
-            <img  src={img} alt="img" />
-          </CardBody>
-          <CardFooter className="pt-0">
-            <Typography variant="h5" >{label}</Typography>
-          </CardFooter>
-        </Card>
-      ))}
-    </div>
+    <section className="py-8">
+      <Typography variant="h3" className="text-center">
+        Empowering Farmers with Smart Solutions - Kissan Mitra
+      </Typography>
+      <div className="flex-center  col-span-full w-full gap-10  py-8 flex-wrap">
+        {Carddata.map(({ id, img, label }, i) => (
+          <Card
+            key={id}
+            className="mt-6 w-40 md:w-60 bg-pastelGreen-300 flex-center shadow-dark-shadow hover:rounded-none transition-all"
+          >
+            <CardBody className="flex-center flex-col gap-4" >
+              <img src={img} alt="img" />
+              <Typography className="!text-black" variant="h5">
+                {label.toUpperCase()}
+              </Typography>
+            </CardBody>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 }
 
