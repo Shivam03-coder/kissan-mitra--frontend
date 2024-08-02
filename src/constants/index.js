@@ -29,19 +29,17 @@ export const fertilizerimg = fertilizer;
 // ICONS
 
 import { IoMdClose } from "react-icons/io";
-import { CiMenuFries } from "react-icons/ci";
+import { CiMenuFries, CiCloudDrizzle } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { TfiAlarmClock, TfiDashboard, TfiServer } from "react-icons/tfi";
+import { GiInsectJaws, GiFarmer } from "react-icons/gi";
 import { GoGraph } from "react-icons/go";
 
-export {
-  IoMdClose,
-  CiMenuFries,
-  FaStar,
-  FaArrowRightLong,
-  TfiAlarmClock,
-  TfiDashboard,
-  TfiServer,
-  GoGraph,
-};
+export const Menucloseicon = IoMdClose;
+export const Menuopen = CiMenuFries;
+export const Rightarrowicon = FaArrowRightLong;
+export const Staricon = FaStar;
+export const Framericon = GiFarmer;
+export const Insectsicon = GiInsectJaws;
+export const Graphicon = GoGraph;
+export const Cloudicon = CiCloudDrizzle;

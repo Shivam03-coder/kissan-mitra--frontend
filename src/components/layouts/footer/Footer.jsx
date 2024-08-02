@@ -1,59 +1,46 @@
 import { Typography } from "@material-tailwind/react";
 import Wavesvg from "../../shared/svgs/Wavesvg";
+import { Footerlinks } from "../../../data/index.js";
+import Contactsection from "./sections/Contactsection.jsx";
+const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <section className="relative">
+    <section className="relative pt-10 pb-5">
       <Wavesvg />
       <footer className="w-full  bg-transparent  p-4">
-        <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
-          <img
-            src="https://docs.material-tailwind.com/img/logo-ct-dark.png"
-            alt="logo-ct"
-            className="w-10"
-          />
-          <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-            <li>
-              <Typography
-                as="a"
-                href="#"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-              >
-                About Us
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                as="a"
-                href="#"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-              >
-                License
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                as="a"
-                href="#"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-              >
-                Contribute
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                as="a"
-                href="#"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-              >
-                Contact Us
-              </Typography>
-            </li>
-          </ul>
+        <div className="mx-auto w-full max-w-7xl px-8">
+          <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+            <section className="hidden md:block">
+              <Contactsection />
+            </section>
+            <div className="grid grid-cols-3 justify-between gap-4">
+              {Footerlinks.map(({ title, items }) => (
+                <ul key={title}>
+                  <Typography
+                    variant="small"
+                    color="blue-gray"
+                    className="mb-3 font-medium text-lg opacity-40"
+                  >
+                    {title}
+                  </Typography>
+                  {items.map((link) => (
+                    <li key={link}>
+                      <Typography
+                        as="a"
+                        href="#"
+                        color="gray"
+                        className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      >
+                        {link}
+                      </Typography>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+          </div>
         </div>
-        <Typography className="text-center font-normal">
-          &copy; 2023 KISSAN MITRA
-        </Typography>
       </footer>
     </section>
   );

@@ -1,9 +1,7 @@
 const Wavesvg = () => {
   return (
     <svg
-      className="absolute inset-0 w-full h-full -z-10"
-      width="1440"
-      height="560"
+      className="absolute inset-0 w-full h-full -z-10 hidden md:block"
       opacity="0.38"
       preserveAspectRatio="none"
       viewBox="0 0 1440 560"

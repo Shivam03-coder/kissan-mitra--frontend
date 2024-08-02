@@ -1,7 +1,7 @@
 import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
 import { AvatarStack } from "../../../shared/avatar/Avatarstack";
-import { FaStar } from "../../../../constants";
+import { Staricon } from "../../../../constants";
 import useMediaquery from "../../../../hooks/usemediaQuery";
 
 function Contentsection() {
@@ -20,7 +20,7 @@ function Contentsection() {
         <div className="flex items-center gap-5">
           <AvatarStack />
           <Typography className="flex items-center gap-3">
-            <FaStar className="size-8 text-goldentainoi-500 " />
+            <Staricon className="size-8 text-goldentainoi-500 " />
             <Typography variant="h6" className="opacity-60 hidden md:block">
               Empowering Farmers with Real-Time <br /> Insights and Community
               Support

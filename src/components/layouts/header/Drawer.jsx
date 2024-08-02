@@ -6,7 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Navlist } from "./Navlist";
-import { IoMdClose } from "../../../constants";
+import { Menucloseicon } from "../../../constants";
 import { createPortal } from "react-dom";
 
 export function MobileviewDrawer({ Draweropen, setDraweropen }) {
@@ -30,7 +30,7 @@ export function MobileviewDrawer({ Draweropen, setDraweropen }) {
             onClick={closeDrawer}
             aria-label="Close drawer"
           >
-            <IoMdClose className="text-gray-800 size-9" />
+            <Menucloseicon className="text-gray-800 size-9" />
           </IconButton>
         </div>
 

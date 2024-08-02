@@ -3,10 +3,11 @@ import "./Layout.css";
 import { Route, Routes } from "react-router-dom";
 import { privateRoutes, publicRoutes } from "../routes/Approutes";
 import PrivateRoute from "../routes/Privateroute";
+import Mainloader from "./shared/apploaders/Mainloader";
 
 const Layout = () => {
   return (
-    <Suspense>
+    <Suspense fallback={<Mainloader />}>
       <Routes>
         {/*  PUBLIC ROUTES */}
         {publicRoutes.map(({ path, element }) => (

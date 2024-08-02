@@ -1,6 +1,6 @@
 import { IconButton, Typography } from "@material-tailwind/react";
 import React from "react";
-import { FaArrowRightLong } from "../../../../constants";
+import { Rightarrowicon } from "../../../../constants";
 
 const Servicecontent = () => {
   return (
@@ -22,7 +22,7 @@ const Servicecontent = () => {
           CHECKOUT
         </Typography>
         <IconButton className="bg-pastelGreen-500">
-          <FaArrowRightLong className="text-black size-5" />
+          <Rightarrowicon className="text-black size-5" />
         </IconButton>
       </Typography>
     </section>

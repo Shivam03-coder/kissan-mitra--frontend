@@ -8,10 +8,10 @@ import {
   freshimage,
   safeimage,
   easyimage,
-  TfiAlarmClock,
-  TfiDashboard,
-  TfiServer,
-  GoGraph,
+  Framericon,
+  Insectsicon,
+  Graphicon,
+  Cloudicon,
 } from "../constants";
 
 export const ServicecardData = [
@@ -70,33 +70,47 @@ export const PropcardsData = [
   },
 ];
 
-import { CiCloudDrizzle } from "react-icons/ci";
-import { GiInsectJaws } from "react-icons/gi";
-import { GiFarmer } from "react-icons/gi";
+
+Framericon
 
 export const AppinfoData = [
   {
     id: 1,
-    icons: CiCloudDrizzle,
+    icons: Cloudicon,
     title: "Weather Updates",
     text: "Access real-time weather forecasts to make informed decisions for your crops and farming activities.",
   },
   {
     id: 2,
-    icons: GiInsectJaws,
+    icons: Insectsicon,
     title: "Check Plant Disease",
     text: "Utilize our plant disease detection feature to identify potential issues early and take corrective action.",
   },
   {
     id: 3,
-    icons: GiFarmer,
+    icons: Framericon,
     title: "Calculate Yield",
     text: "Estimate your crop yield with our specialized tools, ensuring better planning and resource allocation.",
   },
   {
     id: 4,
-    icons: GoGraph,
+    icons: Graphicon,
     title: "Market Trends",
     text: "Analyze market trends and make informed decisions on selling your produce for the best price.",
+  },
+];
+
+export const Footerlinks = [
+  {
+    title: "Product",
+    items: ["Overview", "Features"],
+  },
+  {
+    title: "Company",
+    items: ["About us", "Careers"],
+  },
+  {
+    title: "Resource",
+    items: ["Blog", "Newsletter"],
   },
 ];
