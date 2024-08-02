@@ -4,9 +4,10 @@ const Meteorsvg = () => {
   return (
     <svg
       className="absolute inset-0 w-full h-full -z-10"
-      preserveAspectRatio="xMidYMid slice"
-      opacity="0.68"
+      preserveAspectRatio="none"
       viewBox="0 0 1000 1200"
+      opacity="0.58"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <g mask='url("#SvgjsMask1021")' fill="none">
         <path
