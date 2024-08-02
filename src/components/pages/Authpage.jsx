@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Authcontent from "../layouts/auth/Authcontent";
 
 function Authpage() {
   return (
-    <div>
-      
+    <div className="min-h-screen">
+      <Authcontent />
     </div>
-  )
+  );
 }
 
-export default Authpage
+export default Authpage;

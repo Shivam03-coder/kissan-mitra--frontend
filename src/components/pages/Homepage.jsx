@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Header } from "../layouts/header/Header";
 import useMediaquery from "../../hooks/usemediaQuery";
-import Maincontetnt from "../layouts/home/Maincontetnt";
 import Meteorsvg from "../shared/svgs/Meteorsvg";
 import { Footer } from "../layouts/footer/Footer";
+import Homecontetnt from "../layouts/home/Homecontetnt";
 
 function Homepage() {
   const [Draweropen, setDraweropen] = useState(false);
@@ -20,7 +20,7 @@ function Homepage() {
         />
       </header>
       <main>
-        <Maincontetnt />
+        <Homecontetnt />
       </main>
       <footer>
         <Footer />

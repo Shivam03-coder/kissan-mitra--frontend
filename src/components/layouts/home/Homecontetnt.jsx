@@ -6,7 +6,7 @@ import Servicecontent from "./sections/Servicecontent";
 import Propcards from "./sections/Propcards";
 import Servicecards from "./sections/Servicecards";
 
-function Maincontetnt() {
+function Homecontetnt() {
   return (
     <main>
       <div className="my-10 mx-auto max-w-6xl grid md:grid-cols-2 gap-10 place-items-center">
@@ -23,4 +23,4 @@ function Maincontetnt() {
   );
 }
 
-export default Maincontetnt;
+export default Homecontetnt;

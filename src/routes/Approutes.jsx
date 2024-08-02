@@ -15,12 +15,10 @@ export const publicRoutes = [
   {
     path: "/",
     element: <Homepage />,
-    children: [
-      {
-        path: "auth",
-        element: <Authpage />,
-      },
-    ],
+  },
+  {
+    path: "/auth",
+    element: <Authpage />,
   },
   {
     path: "/error",

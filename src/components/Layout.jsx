@@ -9,18 +9,8 @@ const Layout = () => {
     <Suspense>
       <Routes>
         {/*  PUBLIC ROUTES */}
-        {publicRoutes.map(({ path, element, children }) => (
-          <Route key={path} path={path} element={element}>
-            {children &&
-              children.map(({ path: childPath, element: childElement }) => (
-                <Route
-                  key={childPath}
-                  path={childPath}
-                  element={childElement}
-                  index
-                />
-              ))}
-          </Route>
+        {publicRoutes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element}></Route>
         ))}
 
         {/* PRIVATE ROUTES */}

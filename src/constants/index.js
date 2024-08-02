@@ -32,5 +32,16 @@ import { IoMdClose } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { TfiAlarmClock, TfiDashboard, TfiServer } from "react-icons/tfi";
+import { GoGraph } from "react-icons/go";
 
-export { IoMdClose, CiMenuFries, FaStar, FaArrowRightLong };
+export {
+  IoMdClose,
+  CiMenuFries,
+  FaStar,
+  FaArrowRightLong,
+  TfiAlarmClock,
+  TfiDashboard,
+  TfiServer,
+  GoGraph,
+};
