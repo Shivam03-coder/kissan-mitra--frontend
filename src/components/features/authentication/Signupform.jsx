@@ -3,10 +3,11 @@ import { useFormik } from "formik";
 import { IoEyeOutline } from "react-icons/io5";
 import { SignupSchema } from "./validations";
 import Titlesection from "../../layouts/auth/section/Titlesection";
-import { useSignupUserMutation } from "../../../redux/endpoints/useauthapi";
+import { useSignupUserMutation } from "../../../redux/endpoints/userauthapi";
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
+import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
+import { setUsercredentials } from "../../../redux/states/userauthstate";
 
 const initialValues = {
   fullname: "",
@@ -18,6 +19,8 @@ const initialValues = {
 const Signupform = ({ Showpassword, setShowpassword }) => {
   const [SignupUser, { isLoading }] = useSignupUserMutation();
 
+  const dispatch = useDispatch();
+
   const { values, errors, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: SignupSchema,
@@ -27,7 +30,11 @@ const Signupform = ({ Showpassword, setShowpassword }) => {
         const { message, status, user } = response;
         if (user && status === "success") {
           toast.success(message);
+
+          dispatch(setUsercredentials(user));
+
           action.resetForm();
+
           window.location.reload();
         }
       } catch (error) {

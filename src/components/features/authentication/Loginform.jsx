@@ -6,22 +6,48 @@ import {
   Spinner,
 } from "@material-tailwind/react";
 import { useFormik } from "formik";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { IoEyeOutline } from "react-icons/io5";
 import { LoginSchema } from "./validations";
 import Titlesection from "../../layouts/auth/section/Titlesection";
+import { useLoginUserMutation } from "../../../redux/endpoints/userauthapi";
+import { useNavigate } from "react-router-dom";
 
 const initialValues = {
-  phonenumber: "",
+  email: "",
   password: "",
-  check: "",
 };
 
 function LoginForm() {
-  const isLoading = false;
+  const [LoginUser, { isLoading }] = useLoginUserMutation();
+
+  const Navigate = useNavigate();
+
   const { values, errors, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: LoginSchema,
-    onSubmit: async (userlogincred, action) => {},
+    onSubmit: async (userlogininfo, action) => {
+      try {
+        const response = await LoginUser(userlogininfo).unwrap();
+
+        const { message, status } = response;
+
+        if (status === "success") {
+          action.resetForm();
+
+          toast.success(message);
+
+          Navigate(`/weather/:location/:userid`);
+          
+          window.location.reload();
+        }
+      } catch (error) {
+        if (error.data.status === "failed") {
+          toast.error(error.data.message);
+        }
+      }
+    },
   });
 
   return (
@@ -70,31 +96,9 @@ function LoginForm() {
         >
           forgotten password ?
         </Typography>
-        <Checkbox
-          onChange={handleChange}
-          color="blue"
-          name="check"
-          value={values.check}
-          label={
-            <Typography
-              variant="small"
-              color="gray"
-              className="flex items-center font-normal"
-            >
-              I agree the
-              <a
-                href="#"
-                className="font-medium transition-colors hover:text-gray-900"
-              >
-                &nbsp;Terms and Conditions
-              </a>
-            </Typography>
-          }
-          containerProps={{ className: "-ml-2.5" }}
-        />
         <Button
           type="submit"
-           className="mt-6 bg-goldentainoi-600 flex-center text-black text-xl"
+          className="mt-6 bg-goldentainoi-600 flex-center text-black text-xl"
           fullWidth
         >
           {isLoading ? (
