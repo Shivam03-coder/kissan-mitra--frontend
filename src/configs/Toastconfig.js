@@ -1,5 +1,4 @@
 import { Bounce } from "react-toastify";
-import "../components/Layout.css";
 
 export const toastConfig = {
   position: "top-center",
@@ -9,7 +8,6 @@ export const toastConfig = {
   pauseOnHover: true,
   draggable: true,
   progress: undefined,
-  theme: "dark",
+  theme: "light",
   transition: Bounce,
-  className: "toast-light-green",
 };

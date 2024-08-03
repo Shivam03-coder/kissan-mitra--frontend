@@ -3,20 +3,40 @@ import { useFormik } from "formik";
 import { IoEyeOutline } from "react-icons/io5";
 import { SignupSchema } from "./validations";
 import Titlesection from "../../layouts/auth/section/Titlesection";
+import { useSignupUserMutation } from "../../../redux/endpoints/useauthapi";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const initialValues = {
   fullname: "",
   phonenumber: "",
+  email: "",
   password: "",
 };
 
-const Signupform = () => {
-  const isLoading = false;
+const Signupform = ({ Showpassword, setShowpassword }) => {
+  const [SignupUser, { isLoading }] = useSignupUserMutation();
 
   const { values, errors, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: SignupSchema,
-    onSubmit: async (userinfo, action) => {},
+    onSubmit: async (userinfo, action) => {
+      try {
+        const response = await SignupUser(userinfo).unwrap();
+        const { message, status, user } = response;
+        if (user && status === "success") {
+          toast.success(message);
+          action.resetForm();
+          window.location.reload();
+        }
+      } catch (error) {
+        if (error.data && error.data.status === "failed") {
+          toast.error(error.data.message);
+          action.resetForm();
+        }
+      }
+    },
   });
 
   return (
@@ -74,10 +94,16 @@ const Signupform = () => {
           <div className="space-y-2">
             <Input
               className="font-Varela"
+              type={Showpassword ? "text" : "password"}
               label="Password"
               placeholder="**********"
               name="password"
-              icon={<IoEyeOutline />}
+              icon={
+                <IoEyeOutline
+                  className="cursor-pointer"
+                  onClick={() => setShowpassword(!Showpassword)}
+                />
+              }
               value={values.password}
               onChange={handleChange}
             />
@@ -92,10 +118,7 @@ const Signupform = () => {
           fullWidth
         >
           {isLoading ? (
-            <Spinner
-              className="size-8 mx-auto bg-transparent"
-              color="deep-orange"
-            />
+            <Spinner className="size-9 mx-auto bg-transparent" color="green" />
           ) : (
             "SIGN UP"
           )}
