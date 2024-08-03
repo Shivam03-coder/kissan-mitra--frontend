@@ -1,6 +1,5 @@
 import { Input, Button, Typography, Spinner } from "@material-tailwind/react";
 import { useFormik } from "formik";
-import { IoEyeOutline } from "react-icons/io5";
 import { SignupSchema } from "./validations";
 import Titlesection from "../../layouts/auth/section/Titlesection";
 import { useSignupUserMutation } from "../../../redux/endpoints/userauthapi";
@@ -8,6 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { setUsercredentials } from "../../../redux/states/userauthstate";
+import { Passwordeye } from "../../../constants";
 
 const initialValues = {
   fullname: "",
@@ -106,7 +106,7 @@ const Signupform = ({ Showpassword, setShowpassword }) => {
               placeholder="**********"
               name="password"
               icon={
-                <IoEyeOutline
+                <Passwordeye
                   className="cursor-pointer"
                   onClick={() => setShowpassword(!Showpassword)}
                 />

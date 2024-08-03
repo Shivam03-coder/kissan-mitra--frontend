@@ -8,19 +8,23 @@ import {
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { IoEyeOutline } from "react-icons/io5";
 import { LoginSchema } from "./validations";
 import Titlesection from "../../layouts/auth/section/Titlesection";
 import { useLoginUserMutation } from "../../../redux/endpoints/userauthapi";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Passwordchnagemodel from "./Passwordchnagemodel";
+import { Passwordeye } from "../../../constants";
 
 const initialValues = {
   email: "",
   password: "",
 };
 
-function LoginForm() {
+function LoginForm({ Showpassword, setShowpassword }) {
   const [LoginUser, { isLoading }] = useLoginUserMutation();
+
+  const [ShowpasswordchangeModel, setShowpasswordchangeModel] = useState(false);
 
   const Navigate = useNavigate();
 
@@ -39,7 +43,7 @@ function LoginForm() {
           toast.success(message);
 
           Navigate(`/weather/:location/:userid`);
-          
+
           window.location.reload();
         }
       } catch (error) {
@@ -74,12 +78,17 @@ function LoginForm() {
           </div>
           <div className="space-y-2">
             <Input
-              className="font-Varela text-secondary-prime"
-              variant="outlined"
+              className="font-Varela"
+              type={Showpassword ? "text" : "password"}
               label="Password"
               placeholder="**********"
               name="password"
-              icon={<IoEyeOutline />}
+              icon={
+                <Passwordeye
+                  className="cursor-pointer"
+                  onClick={() => setShowpassword(!Showpassword)}
+                />
+              }
               value={values.password}
               onChange={handleChange}
             />
@@ -91,8 +100,8 @@ function LoginForm() {
         <Typography
           as={"button"}
           variant="paragraph"
-          onClick={() => Navigate("/ams/password-reset")}
-          className="text-secondary-main hover:underline text-[15px] font-normal mx-2"
+          onClick={() => setShowpasswordchangeModel(true)}
+          className="text-blue-700 hover:underline text-[15px] font-normal mx-2"
         >
           forgotten password ?
         </Typography>
@@ -111,6 +120,14 @@ function LoginForm() {
           )}
         </Button>
       </form>
+      {ShowpasswordchangeModel && (
+        <Passwordchnagemodel
+          ShowpasswordchangeModel={ShowpasswordchangeModel}
+          setShowpasswordchangeModel={setShowpasswordchangeModel}
+          Showpassword={Showpassword}
+          setShowpassword={setShowpassword}
+        />
+      )}
     </section>
   );
 }

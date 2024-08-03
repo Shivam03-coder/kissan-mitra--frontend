@@ -34,6 +34,7 @@ import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GiInsectJaws, GiFarmer } from "react-icons/gi";
 import { GoGraph } from "react-icons/go";
+import { IoEyeOutline } from "react-icons/io5";
 
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
@@ -43,3 +44,4 @@ export const Framericon = GiFarmer;
 export const Insectsicon = GiInsectJaws;
 export const Graphicon = GoGraph;
 export const Cloudicon = CiCloudDrizzle;
+export const Passwordeye = IoEyeOutline;
