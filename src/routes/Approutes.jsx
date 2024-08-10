@@ -1,7 +1,7 @@
 import { lazy } from "react";
 
 const Homepage = lazy(() => import("../components/pages/Homepage"));
-const Authpage = lazy(() => import("../components/pages/Authpage"));
+const UserAuthpage = lazy(() => import("../components/pages/UserAuthpage"));
 const Weatherpage = lazy(() => import("../components/pages/Weatherpage"));
 const Yieldpage = lazy(() => import("../components/pages/Yieldproductionpage"));
 const Pestspage = lazy(() => import("../components/pages/Phytopathologiespge"));
@@ -18,7 +18,7 @@ export const publicRoutes = [
   },
   {
     path: "/auth",
-    element: <Authpage />,
+    element: <UserAuthpage />,
   },
   {
     path: "/error",

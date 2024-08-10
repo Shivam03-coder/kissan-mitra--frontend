@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Header } from "../layouts/header/Header";
-import useMediaquery from "../../hooks/usemediaQuery";
+import {useMediaquery} from "../../hooks/usemediaQuery";
 import Meteorsvg from "../shared/svgs/Meteorsvg";
 import { Footer } from "../layouts/footer/Footer";
-import Homecontetnt from "../layouts/home/Homecontetnt";
+import HomeConatiner from "../layouts/home/HomeConatiner";
 
 function Homepage() {
   const [Draweropen, setDraweropen] = useState(false);
   const isMobileview = useMediaquery(960);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       <Meteorsvg />
       <header className="sticky top-0 z-30">
         <Header
@@ -20,7 +20,7 @@ function Homepage() {
         />
       </header>
       <main>
-        <Homecontetnt />
+        <HomeConatiner />
       </main>
       <footer>
         <Footer />

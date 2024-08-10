@@ -1,7 +1,7 @@
 import { Input, Button, Typography, Spinner } from "@material-tailwind/react";
 import { useFormik } from "formik";
 import { SignupSchema } from "./validations";
-import Titlesection from "../../layouts/auth/section/Titlesection";
+import Titlesection from "../../layouts/userauth/section/Titlesection";
 import { useSignupUserMutation } from "../../../redux/endpoints/userauthapi";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -9,7 +9,7 @@ import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { LoginSchema } from "./validations";
-import Titlesection from "../../layouts/auth/section/Titlesection";
+import Titlesection from "../../layouts/userauth/section/Titlesection";
 import { useLoginUserMutation } from "../../../redux/endpoints/userauthapi";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";

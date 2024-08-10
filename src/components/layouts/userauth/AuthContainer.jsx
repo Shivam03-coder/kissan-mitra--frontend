@@ -6,7 +6,7 @@ import LoginForm from "../../features/authentication/Loginform";
 import Signupform from "../../features/authentication/Signupform";
 import { useSelector } from "react-redux";
 
-const Authcontent = () => {
+const AuthContainer = () => {
   const { Registerd_User_info } = useSelector((state) => state.userauthstate);
 
   const [Showpassword, setShowpassword] = useState(false);
@@ -44,4 +44,4 @@ const Authcontent = () => {
   );
 };
 
-export default Authcontent;
+export default AuthContainer;
