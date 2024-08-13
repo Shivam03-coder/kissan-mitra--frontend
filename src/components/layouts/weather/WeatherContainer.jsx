@@ -1,14 +1,14 @@
-import WeeklyForecast from "./sections/WeeklyForecast";
-import CurrentWeatherSection from "./sections/CurrentWeatherSection";
-import WeatherheaderSection from "./sections/WeatherheaderSection";
+import WeatherheaderSection from "./WeatherheaderSection";
+import TodaysWeather from "./sections/TodaysWeather";
+import WeeklyWeather from "./sections/WeeklyWeather";
 
 const WeatherContainer = () => {
   return (
     <div className="size-full">
       <WeatherheaderSection />
-      <div className="grid md:grid-cols-2 h-full w-full place-items-center">
-        <CurrentWeatherSection />
-        <WeeklyForecast />
+      <div className="grid  z-40  md:grid-cols-2 min-h-[90vh] w-full ">
+        <TodaysWeather />
+        <WeeklyWeather />
       </div>
     </div>
   );

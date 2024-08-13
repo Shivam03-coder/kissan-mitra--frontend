@@ -12,6 +12,9 @@ import {
   Insectsicon,
   Graphicon,
   Cloudicon,
+  TempIcon,
+  WindIcon,
+  HumidityIcon,
 } from "../constants";
 
 export const ServicecardData = [
@@ -70,9 +73,6 @@ export const PropcardsData = [
   },
 ];
 
-
-Framericon
-
 export const AppinfoData = [
   {
     id: 1,
@@ -112,5 +112,49 @@ export const Footerlinks = [
   {
     title: "Resource",
     items: ["Blog", "Newsletter"],
+  },
+];
+
+export const AircondtionsData = [
+  {
+    id: 1,
+    icon: WindIcon,
+    label: "Wind",
+    value: "123",
+  },
+  {
+    id: 2,
+    icon: Cloudicon,
+    label: "Cloud",
+    value: "123",
+  },
+  {
+    id: 3,
+    icon: HumidityIcon,
+    label: "Humidity",
+    value: "123",
+  },
+];
+
+export const TodaysForecastData = [
+  {
+    id: 1,
+    time: "9:00",
+  },
+  {
+    id: 2,
+    time: "9:00",
+  },
+  {
+    id: 3,
+    time: "9:00",
+  },
+  {
+    id: 4,
+    time: "9:00",
+  },
+  {
+    id: 5,
+    time: "9:00",
   },
 ];
