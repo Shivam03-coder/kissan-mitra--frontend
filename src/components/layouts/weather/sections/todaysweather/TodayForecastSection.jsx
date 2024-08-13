@@ -12,9 +12,9 @@ const TodayForecastSection = () => {
       >
         TODAYS'S FORECAST
       </Typography>
-      <section className="grid p-7 w-full grid-cols-3 gap-4 place-items-center">
+      <section className="grid p-2 w-full grid-cols-3 gap-4 place-items-center">
         <div className="flex-center flex-col p-2 size-[100px] rounded-2xl bg-green-500 ">
-         <Typography variant="h6" className="opacity-70">
+          <Typography variant="h6" className="opacity-70">
             06:00
           </Typography>
           <CloudIcon className="size-12 text-black" />
@@ -23,7 +23,7 @@ const TodayForecastSection = () => {
           </Typography>
         </div>
         <div className="flex-center flex-col p-2  size-[100px] rounded-2xl bg-green-400 ">
-         <Typography variant="h6" className="opacity-70">
+          <Typography variant="h6" className="opacity-70">
             06:00
           </Typography>
           <CloudIcon className="size-12 text-black" />
@@ -32,7 +32,7 @@ const TodayForecastSection = () => {
           </Typography>
         </div>
         <div className="flex-center flex-col p-2  size-[100px] rounded-2xl bg-green-300 ">
-         <Typography variant="h6" className="opacity-70">
+          <Typography variant="h6" className="opacity-70">
             06:00
           </Typography>
           <CloudIcon className="size-12 text-black" />

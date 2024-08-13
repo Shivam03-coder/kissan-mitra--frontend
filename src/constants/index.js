@@ -38,7 +38,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { CiCloud } from "react-icons/ci";
 import { CiTempHigh } from "react-icons/ci";
-import { FaWind } from "react-icons/fa6";
+import { PiWindThin } from "react-icons/pi";
 import { WiHumidity } from "react-icons/wi";
 
 export const Menucloseicon = IoMdClose;
@@ -54,5 +54,5 @@ export const GithubIcon = FaGithub;
 export const CloudIcon = CiCloud;
 export const RainyCloudIcon = CiCloudDrizzle;
 export const TempIcon = CiTempHigh;
-export const WindIcon = FaWind;
+export const WindIcon = PiWindThin;
 export const HumidityIcon = WiHumidity;

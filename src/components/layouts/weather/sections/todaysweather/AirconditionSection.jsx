@@ -15,15 +15,15 @@ const AirconditionSection = () => {
   });
 
   return (
-    <section className="w-[96%] md:w-[80%] mx-auto rounded-2xl shadow-glass h-full p-4 my-4  flex justify-center bg-pastelGreen-500 items-center flex-col">
+    <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl shadow-glass h-full p-4 my-4  flex justify-center bg-pastelGreen-500 items-center flex-col">
       <Typography
-        className="flex flex-1 items-center font-Inter p-1"
+        className="flex flex-1 items-center font-Inter p-1 mb-1"
         as={"div"}
         variant="h4"
       >
         AIR CONDITIONS
       </Typography>
-      <section className="grid p-7 w-full grid-cols-3 gap-4 place-items-center">
+      <section className="grid p-2 w-full grid-cols-3 gap-4 place-items-center">
         {AirconditionNewData.map(
           ({ id, icon, label, value, Bgcolor }, index) => {
             const ICON = icon;
