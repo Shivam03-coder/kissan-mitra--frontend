@@ -6,7 +6,7 @@ const WeatherContainer = () => {
   return (
     <div className="size-full">
       <HeaderSection />
-      <div className="grid  z-40 py-7  md:grid-cols-2 min-h-[90vh] w-full ">
+      <div className="grid  z-40 py-4  md:grid-cols-2 min-h-[90vh] w-full ">
         <TodaysWeather />
         <WeeklyWeather />
       </div>
