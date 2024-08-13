@@ -8,7 +8,7 @@ const Authendpoints = Apiservices.injectEndpoints({
   endpoints: (build) => ({
     signupUser: build.mutation({
       query: (userinfo) => ({
-        url: "/signup",
+        url: "/auth/signup",
         method: "POST",
         body: userinfo,
         headers,
@@ -17,7 +17,7 @@ const Authendpoints = Apiservices.injectEndpoints({
     }),
     loginUser: build.mutation({
       query: (userinfo) => ({
-        url: "/login",
+        url: "/auth/login",
         method: "POST",
         body: userinfo,
         headers,
@@ -26,7 +26,7 @@ const Authendpoints = Apiservices.injectEndpoints({
     }),
     passwordChange: build.mutation({
       query: (password) => ({
-        url: "/passwordchange",
+        url: "/auth/passwordchange",
         method: "POST",
         body: password,
         headers,
@@ -35,15 +35,22 @@ const Authendpoints = Apiservices.injectEndpoints({
     }),
     logoutUser: build.mutation({
       query: () => ({
-        url: "/logout",
+        url: "/auth/logout",
         method: "POST",
         headers,
       }),
     }),
     signoutUser: build.mutation({
       query: () => ({
-        url: "/signout",
+        url: "/auth/signout",
         method: "POST",
+        headers,
+      }),
+    }),
+    getweatherData: build.query({
+      query: ({ latitude, longitude }) => ({
+        url: `/weather/${latitude}/${longitude}`,
+        method: "GET",
         headers,
       }),
     }),
@@ -56,4 +63,5 @@ export const {
   usePasswordChangeMutation,
   useLogoutUserMutation,
   useSignoutUserMutation,
+  useGetweatherDataQuery
 } = Authendpoints;
