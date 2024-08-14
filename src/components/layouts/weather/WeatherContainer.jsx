@@ -1,22 +1,39 @@
+import { useEffect } from "react";
 import { useGeolocation } from "../../../hooks/useGeolocation";
 import { useGetweatherDataQuery } from "../../../redux/endpoints/userauthapi";
 import HeaderSection from "./HeaderSection";
 import TodaysWeather from "./sections/TodaysWeather";
 import WeeklyWeather from "./sections/WeeklyWeather";
+import {
+  clearWeatherData,
+  setToDaysWeatherData,
+  setWeeklyWeatherData,
+} from "../../../redux/states/weatherdataSlice";
+import { useDispatch } from "react-redux";
 
 const WeatherContainer = () => {
   const location = useGeolocation();
-  console.log("🚀 ~ WeatherContainer ~ location:", location);
-
   const { latitude, longitude } = location;
-  const { data, error, isLoading } = useGetweatherDataQuery(
+  const dispatch = useDispatch();
+
+  const { data, error, isSuccess } = useGetweatherDataQuery(
     { latitude, longitude },
     {
       skip: !latitude || !longitude,
     }
   );
 
-  console.log("🚀 ~ WeatherContainer ~ data:", data);
+  useEffect(() => {
+    if (location && isSuccess && data) {
+      dispatch(setToDaysWeatherData(data.CurrentWeatherData));
+      dispatch(setWeeklyWeatherData(data.Next5DaysWeatherData));
+    }
+
+    if (error) {
+      dispatch(clearWeatherData());
+    }
+  }, [location, dispatch]);
+
   return (
     <div className="size-full">
       <HeaderSection />

@@ -40,6 +40,7 @@ import { CiCloud } from "react-icons/ci";
 import { CiTempHigh } from "react-icons/ci";
 import { PiWindThin } from "react-icons/pi";
 import { WiHumidity } from "react-icons/wi";
+import { BsCloudRain } from "react-icons/bs";
 
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
@@ -56,3 +57,4 @@ export const RainyCloudIcon = CiCloudDrizzle;
 export const TempIcon = CiTempHigh;
 export const WindIcon = PiWindThin;
 export const HumidityIcon = WiHumidity;
+export const RainIcon = BsCloudRain;

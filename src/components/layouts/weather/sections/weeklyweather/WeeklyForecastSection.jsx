@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import DayForecastSection from "./DayForecastSection";
+import DaysForecastSection from "./DaysForecastSection";
 
 const WeeklyForecastSection = () => {
   return (
@@ -9,15 +9,10 @@ const WeeklyForecastSection = () => {
         as={"div"}
         variant="h4"
       >
-        TODAYS'S FORECAST
+        WEEKLY FORECAST
       </Typography>
-      <section className="my-3 grid h-full w-full grid-rows-6 gap-3">
-        <DayForecastSection bgcolor="900" />
-        <DayForecastSection bgcolor="800"/>
-        <DayForecastSection bgcolor="700"/>
-        <DayForecastSection bgcolor="500"/>
-        <DayForecastSection bgcolor="400"/>
-        <DayForecastSection bgcolor="300"/>
+      <section className="my-3 grid h-full w-full grid-rows-5 gap-3">
+        <DaysForecastSection bgcolor="900" />
       </section>
     </section>
   );
