@@ -1,42 +1,47 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
 import { CloudIcon } from "../../../../../constants";
+import { getTodaysDatewithoutYear } from "../../../../../utils";
 
-const CurrentWeatherSection = () => {
+const CurrentWeatherSection = ({ ToDaysWeatherData }) => {
+
   return (
-    <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl shadow-glass bg-pastelGreen-500 p-4 my-4 flex justify-center items-center flex-col">
+    <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl  h-full  p-4 my-4  flex justify-center  items-center flex-col">
       <Typography
-        className="flex flex-1 items-center font-Inter p-1"
-        as={"div"}
+        className="w-[90%] flex justify-center bg-green-100 shadow-inner rounded-t-3xl  text-black   items-center font-Inter py-3 "
         variant="h4"
       >
         CURRENT WEATHER
       </Typography>
-      <section className="grid p-2 w-full grid-cols-3  gap-4">
-        <div className="text-center bg-green-500 p-2 rounded-xl  flex-col flex-center">
-          <Typography className="font-Inter" variant="h6">
-            KOLKATA
-          </Typography>
-          <Typography
-            className="font-Inter opacity-80 font-medium text-sm"
-            variant="small"
-          >
-            13 Feb
-          </Typography>
-        </div>
-        <div className="text-center bg-green-400 p-2 rounded-xl  flex-col flex-center">
-          <Typography variant="h6">7 °C</Typography>
-          <Typography
-            className="font-Inter opacity-80 font-medium text-sm"
-            variant="small"
-          >
-             Clouds
-          </Typography>
-        </div>
-        <div className="text-center bg-green-300 p-2 rounded-xl  flex-col flex-center">
-          <CloudIcon className="size-14 text-black" />
-        </div>
-      </section>
+      {ToDaysWeatherData && (
+        <section className="grid p-5 border-green-900  border rounded-2xl shadow-5xl w-full grid-cols-3  gap-4">
+          <div className="text-center shadow-dark-shadow bg-yellow-500 p-2 rounded-xl  flex-col flex-center">
+            <Typography className="font-Inter uppercase" variant="h6">
+              {ToDaysWeatherData.name}
+            </Typography>
+            <Typography
+              className="font-Inter opacity-80 font-medium text-sm"
+              variant="small"
+            >
+              {getTodaysDatewithoutYear()}
+            </Typography>
+          </div>
+          <div className="text-center  shadow-dark-shadow bg-yellow-500  p-2 rounded-xl  flex-col flex-center">
+            <Typography variant="h6">
+              {ToDaysWeatherData?.main?.temp} °C
+            </Typography>
+            <Typography
+              className="font-Inter opacity-80 font-medium text-sm"
+              variant="small"
+            >
+              {ToDaysWeatherData?.weather[0].main}
+            </Typography>
+          </div>
+          <div className="text-center  shadow-dark-shadow bg-yellow-500  p-2 rounded-xl  flex-col flex-center">
+            <CloudIcon className="size-14 text-black" />
+          </div>
+        </section>
+      )}
     </section>
   );
 };

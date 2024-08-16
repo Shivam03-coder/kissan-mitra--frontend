@@ -1,50 +1,56 @@
 import { Typography } from "@material-tailwind/react";
 import { AircondtionsData } from "../../../../../data";
-import { useMemo } from "react";
+import { Cloudicon, HumidityIcon, WindIcon } from "../../../../../constants";
 
-const AirconditionSection = () => {
-  const AirconditionNewData = useMemo(() => {
-    let Bgcolor = 600;
-    return AircondtionsData.map((items) => {
-      Bgcolor = Bgcolor - 100;
-      return {
-        ...items,
-        Bgcolor,
-      };
-    });
-  });
-
+const AirconditionSection = ({ ToDaysWeatherData }) => {
   return (
-    <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl shadow-glass h-full p-4 my-4  flex justify-center bg-pastelGreen-500 items-center flex-col">
+    <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl  h-full  p-4 my-4  flex justify-center  items-center flex-col">
       <Typography
-        className="flex flex-1 items-center font-Inter p-1 mb-1"
-        as={"div"}
+        className="w-[90%] flex justify-center bg-green-100 shadow-inner rounded-t-3xl  text-black   items-center font-Inter py-3 "
         variant="h4"
       >
         AIR CONDITIONS
       </Typography>
-      <section className="grid p-2 w-full grid-cols-3 gap-4 place-items-center">
-        {AirconditionNewData.map(
-          ({ id, icon, label, value, Bgcolor }, index) => {
-            const ICON = icon;
-            return (
-              <div
-                key={id}
-                className={`text-center w-[100px] h-[70px]  bg-green-${Bgcolor}  rounded-xl  flex-col flex-center`}
-              >
-                <div className="flex items-center justify-center gap-1">
-                  <i>
-                    <ICON className="size-5" />
-                  </i>
-                  <span>{label}</span>
-                </div>
-                <Typography className="opacity-80" variant="h6">
-                  {value}
-                </Typography>
-              </div>
-            );
-          }
-        )}
+      <section className="grid border border-green-900 shadow-glass  rounded-2xl p-5 w-full grid-cols-3 gap-4 place-items-center">
+        <div
+          className={`text-center w-[120px] h-[70px]  bg-yellow-500 shadow-dark-shadow rounded-xl  flex-col flex-center`}
+        >
+          <div className="flex items-center justify-center gap-1">
+            <i>
+              <WindIcon className="size-5" />
+            </i>
+            <span>Wind</span>
+          </div>
+          <Typography className="opacity-80" variant="h6">
+            {ToDaysWeatherData.wind.speed} m/s
+          </Typography>
+        </div>
+        <div
+          className={`text-center w-[120px] h-[70px]  bg-yellow-500 shadow-dark-shadow rounded-xl  flex-col flex-center`}
+        >
+          <div className="flex items-center justify-center gap-1">
+            <i>
+              <Cloudicon className="size-5" />
+            </i>
+            <span>Cloud</span>
+          </div>
+          <Typography className="opacity-80" variant="h6">
+            {ToDaysWeatherData.clouds.all}%
+          </Typography>
+        </div>
+        <div
+          className={`text-center w-[120px] h-[70px]  bg-yellow-500 shadow-dark-shadow rounded-xl  flex-col flex-center`}
+        >
+          <div className="flex items-center justify-center gap-1">
+            <i>
+              <HumidityIcon className="size-5" />
+            </i>
+            <span>Humidity</span>
+          </div>
+          <Typography className="opacity-80" variant="h6">
+            {ToDaysWeatherData.main.humidity} %
+          </Typography>
+        </div>
       </section>
     </section>
   );
