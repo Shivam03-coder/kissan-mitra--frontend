@@ -4,6 +4,7 @@ import { CloudIcon } from "../../../../../constants";
 import { getTodaysDatewithoutYear } from "../../../../../utils";
 
 const CurrentWeatherSection = ({ ToDaysWeatherData }) => {
+console.log("🚀 ~ CurrentWeatherSection ~ ToDaysWeatherData:", ToDaysWeatherData)
 
   return (
     <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl  h-full  p-4 my-4  flex justify-center  items-center flex-col">
@@ -17,7 +18,7 @@ const CurrentWeatherSection = ({ ToDaysWeatherData }) => {
         <section className="grid p-5 border-green-900  border rounded-2xl shadow-5xl w-full grid-cols-3  gap-4">
           <div className="text-center shadow-dark-shadow bg-yellow-500 p-2 rounded-xl  flex-col flex-center">
             <Typography className="font-Inter uppercase" variant="h6">
-              {ToDaysWeatherData.name}
+              {ToDaysWeatherData.city}
             </Typography>
             <Typography
               className="font-Inter opacity-80 font-medium text-sm"
@@ -28,13 +29,13 @@ const CurrentWeatherSection = ({ ToDaysWeatherData }) => {
           </div>
           <div className="text-center  shadow-dark-shadow bg-yellow-500  p-2 rounded-xl  flex-col flex-center">
             <Typography variant="h6">
-              {ToDaysWeatherData?.main?.temp} °C
+              {ToDaysWeatherData.temperature} °C
             </Typography>
             <Typography
               className="font-Inter opacity-80 font-medium text-sm"
               variant="small"
             >
-              {ToDaysWeatherData?.weather[0].main}
+             {ToDaysWeatherData.weather?.[0].main}
             </Typography>
           </div>
           <div className="text-center  shadow-dark-shadow bg-yellow-500  p-2 rounded-xl  flex-col flex-center">

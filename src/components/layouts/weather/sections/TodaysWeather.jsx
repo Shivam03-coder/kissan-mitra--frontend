@@ -5,7 +5,8 @@ import TodayForecastSection from "./todaysweather/TodayForecastSection";
 import { useSelector } from "react-redux";
 
 const TodaysWeather = () => {
-  const { ToDaysWeatherData } = useSelector((state) => state.weather);
+  const { ToDaysWeatherData , ThreeHoursWeatherData } = useSelector((state) => state.weather);
+
   return (
     <section className="place-self-stretch w-full h-full flex flex-col">
       {ToDaysWeatherData && (
@@ -17,9 +18,9 @@ const TodaysWeather = () => {
           <AirconditionSection
             ToDaysWeatherData={ToDaysWeatherData}
             className="flex-1"
-          />
+          /> 
           <TodayForecastSection
-            ToDaysWeatherData={ToDaysWeatherData}
+            ThreeHoursWeatherData={ThreeHoursWeatherData}
             className="flex-1"
           />
         </>

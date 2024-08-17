@@ -3,6 +3,10 @@ import { AircondtionsData } from "../../../../../data";
 import { Cloudicon, HumidityIcon, WindIcon } from "../../../../../constants";
 
 const AirconditionSection = ({ ToDaysWeatherData }) => {
+  console.log(
+    "🚀 ~ AirconditionSection ~ ToDaysWeatherData:",
+    ToDaysWeatherData
+  );
   return (
     <section className="w-[97%] md:w-[80%] mx-auto rounded-2xl  h-full  p-4 my-4  flex justify-center  items-center flex-col">
       <Typography
@@ -22,7 +26,7 @@ const AirconditionSection = ({ ToDaysWeatherData }) => {
             <span>Wind</span>
           </div>
           <Typography className="opacity-80" variant="h6">
-            {ToDaysWeatherData.wind.speed} m/s
+            {ToDaysWeatherData.wind} m/s
           </Typography>
         </div>
         <div
@@ -32,10 +36,9 @@ const AirconditionSection = ({ ToDaysWeatherData }) => {
             <i>
               <Cloudicon className="size-5" />
             </i>
-            <span>Cloud</span>
           </div>
           <Typography className="opacity-80" variant="h6">
-            {ToDaysWeatherData.clouds.all}%
+            {ToDaysWeatherData.weather?.[0].main}
           </Typography>
         </div>
         <div
@@ -48,7 +51,7 @@ const AirconditionSection = ({ ToDaysWeatherData }) => {
             <span>Humidity</span>
           </div>
           <Typography className="opacity-80" variant="h6">
-            {ToDaysWeatherData.main.humidity} %
+            {ToDaysWeatherData.humidity} %
           </Typography>
         </div>
       </section>

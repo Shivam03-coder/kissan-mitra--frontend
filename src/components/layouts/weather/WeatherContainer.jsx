@@ -4,8 +4,10 @@ import { useGetweatherDataQuery } from "../../../redux/endpoints/userauthapi";
 import HeaderSection from "./HeaderSection";
 import TodaysWeather from "./sections/TodaysWeather";
 import WeeklyWeather from "./sections/WeeklyWeather";
+import Mainloader from "../../shared/apploaders/Mainloader"
 import {
   clearWeatherData,
+  setThreeHoursWeatherData,
   setToDaysWeatherData,
   setWeeklyWeatherData,
 } from "../../../redux/states/weatherdataSlice";
@@ -24,15 +26,23 @@ const WeatherContainer = () => {
   );
 
   useEffect(() => {
-    if (location && isSuccess && data) {
+    if (isSuccess && data) {
       dispatch(setToDaysWeatherData(data.CurrentWeatherData));
       dispatch(setWeeklyWeatherData(data.Next5DaysWeatherData));
-    }
-
-    if (error) {
+      dispatch(setThreeHoursWeatherData(data.ThreeHoursWeatherData));
+    } else if (error) {
+      console.error("Error fetching weather data:", error);
       dispatch(clearWeatherData());
     }
-  }, [location, dispatch]);
+  }, [location, isSuccess, data, error, dispatch]);
+
+  if (!isSuccess && !error) {
+    return <Mainloader />;
+  }
+
+  if (error) {
+    return <div>Error loading weather data.</div>;
+  }
 
   return (
     <div className="size-full">

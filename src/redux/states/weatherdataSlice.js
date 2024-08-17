@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   ToDaysWeatherData: [],
   WeeklyWeatherData: [],
+  ThreeHoursWeatherData: [],
 };
 
 export const weatherdataSlice = createSlice({
@@ -15,6 +16,9 @@ export const weatherdataSlice = createSlice({
     setWeeklyWeatherData: (state, action) => {
       state.WeeklyWeatherData = action.payload;
     },
+    setThreeHoursWeatherData: (state, action) => {
+      state.ThreeHoursWeatherData = action.payload;
+    },
     clearWeatherData: (state) => {
       state.WeeklyWeatherData = [];
       state.ToDaysWeatherData = [];
@@ -22,5 +26,9 @@ export const weatherdataSlice = createSlice({
   },
 });
 
-export const { setToDaysWeatherData, setWeeklyWeatherData, clearWeatherData } =
-  weatherdataSlice.actions;
+export const {
+  setToDaysWeatherData,
+  setWeeklyWeatherData,
+  setThreeHoursWeatherData,
+  clearWeatherData,
+} = weatherdataSlice.actions;
