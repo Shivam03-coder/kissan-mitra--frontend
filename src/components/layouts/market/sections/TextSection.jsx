@@ -3,7 +3,7 @@ import React from "react";
 
 const TextSection = () => {
   return (
-    <section className="flex flex-col py-6 bg-blue-gray-500   px-4 md:px-8 lg:px-16">
+    <section className="flex flex-col py-6    px-4 md:px-8 lg:px-16">
       <Typography
         variant="h3"
         color="blue-gray"

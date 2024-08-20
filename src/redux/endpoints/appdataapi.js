@@ -30,8 +30,21 @@ const Appdataendpoints = Apiservices.injectEndpoints({
         credentials: "include",
       }),
     }),
+    getMarketData: build.mutation({
+      query: (loactioninfo) => ({
+        url: `/market/market-data`,
+        method: "POST",
+        headers,
+        body: loactioninfo,
+        credentials: "include",
+      }),
+    }),
   }),
 });
 
-export const { useGetweatherDataQuery, useGetStateDataQuery , useGetLocalMarketNameMutation} =
-  Appdataendpoints;
+export const {
+  useGetweatherDataQuery,
+  useGetStateDataQuery,
+  useGetLocalMarketNameMutation,
+  useGetMarketDataMutation,
+} = Appdataendpoints;

@@ -3,9 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   selectedStateName: "",
   selectedDistrictName: "",
+  selectedLocalMarketName: "",
   districtsNamesData: [],
-  localMarketName: "",
   localMarketNamesData: [],
+  marketPriceData: [],
 };
 
 export const statedataSlice = createSlice({
@@ -18,8 +19,8 @@ export const statedataSlice = createSlice({
     setSelectedDistrictName: (state, action) => {
       state.selectedDistrictName = action.payload;
     },
-    setLocalMarketName: (state, action) => {
-      state.localMarketName = action.payload;
+    setSelectedLocalMarketName: (state, action) => {
+      state.selectedLocalMarketName = action.payload;
     },
     setDistrictsNamesData: (state, action) => {
       state.districtsNamesData = action.payload;
@@ -31,7 +32,10 @@ export const statedataSlice = createSlice({
       state.districtsNamesData = [];
     },
     clearSelelctedlocaLMarketNamesData: (state) => {
-      state.localMarketName = [];
+      state.localMarketNamesData = [];
+    },
+    setMarketPriceData: (state, action) => {
+      state.marketPriceData = action.payload;
     },
   },
 });
@@ -39,8 +43,9 @@ export const statedataSlice = createSlice({
 export const {
   setSelectedStateName,
   setSelectedDistrictName,
-  setLocalMarketName,
+  setSelectedLocalMarketName,
   setDistrictsNamesData,
+  setMarketPriceData,
   setLocalMarketNamesData,
   clearSelectedDistrictNamesData,
   clearSelelctedlocaLMarketNamesData,

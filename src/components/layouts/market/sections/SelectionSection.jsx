@@ -1,6 +1,7 @@
-import { Select, Option } from "@material-tailwind/react";
+import { Select, Option, Button } from "@material-tailwind/react";
 import {
   useGetLocalMarketNameMutation,
+  useGetMarketDataMutation,
   useGetStateDataQuery,
 } from "../../../../redux/endpoints/appdataapi";
 import Mainloader from "../../../shared/apploaders/Mainloader";
@@ -9,20 +10,23 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setSelectedStateName,
   setSelectedDistrictName,
-  setLocalMarketName,
+  setSelectedLocalMarketName,
   setDistrictsNamesData,
   setLocalMarketNamesData,
   clearSelectedDistrictNamesData,
   clearSelelctedlocaLMarketNamesData,
+  setMarketPriceData,
 } from "../../../../redux/states/statedataSlice";
 
 const SelectionSection = () => {
   const { data: stateData, isSuccess, error } = useGetStateDataQuery();
   const [getLocalMarketName] = useGetLocalMarketNameMutation();
+  const [getmarketData] = useGetMarketDataMutation();
   const dispatch = useDispatch();
   const {
     selectedStateName,
     selectedDistrictName,
+    selectedLocalMarketName,
     districtsNamesData,
     localMarketNamesData,
   } = useSelector((state) => state.stateData);
@@ -63,10 +67,23 @@ const SelectionSection = () => {
 
   const handleLocalMarketCahnge = useCallback(
     (value) => {
-      dispatch(setLocalMarketName(value));
+      dispatch(setSelectedLocalMarketName(value));
     },
     [getLocalMarketName, dispatch]
   );
+
+  const handleMarketData = async () => {
+    try {
+      const { data } = await getmarketData({
+        state: selectedStateName,
+        district: selectedDistrictName,
+        market: selectedLocalMarketName,
+      }).unwrap();
+      dispatch(setMarketPriceData(data));
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   useEffect(() => {
     if (stateData && selectedStateName) {
@@ -95,8 +112,8 @@ const SelectionSection = () => {
   if (error) return <div>Error loading data...</div>;
 
   return (
-    <section className="grid md:grid-cols-3 gap-5 place-items-center py-6">
-      <div className="w-72">
+    <section className="grid w-[95%] mx-auto md:grid-cols-4 gap-3 place-items-center py-6">
+      <div className="w-64">
         {stateOptions.length > 0 && (
           <Select
             className="border-2 text-lg"
@@ -106,14 +123,13 @@ const SelectionSection = () => {
               mount: { y: 0 },
               unmount: { y: 25 },
             }}
-            value={selectedStateName}
             onChange={handleStateChange}
           >
             {stateOptions}
           </Select>
         )}
       </div>
-      <div className="w-72">
+      <div className="w-64">
         <Select
           className="border-2 text-lg"
           label="Select District"
@@ -122,7 +138,6 @@ const SelectionSection = () => {
             mount: { y: 0 },
             unmount: { y: 25 },
           }}
-          value={selectedDistrictName}
           onChange={handleDistrictChange}
         >
           {districtsNamesData?.map((district, index) => (
@@ -136,7 +151,7 @@ const SelectionSection = () => {
           ))}
         </Select>
       </div>
-      <div className="w-72">
+      <div className="w-64">
         <Select
           className="border-2 text-lg"
           label="Select Mandi"
@@ -146,7 +161,6 @@ const SelectionSection = () => {
             unmount: { y: 25 },
           }}
           disabled={localMarketNamesData.length === 0 ? true : false}
-          value={selectedDistrictName}
           onChange={handleLocalMarketCahnge}
         >
           {localMarketNamesData?.map((market, index) => (
@@ -160,6 +174,12 @@ const SelectionSection = () => {
           ))}
         </Select>
       </div>
+      <Button
+        onClick={handleMarketData}
+        className="w-60 bg-green-500  text-black rounded-lg shadow-glass-card text-xl"
+      >
+        CHECK
+      </Button>
     </section>
   );
 };

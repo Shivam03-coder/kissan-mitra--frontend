@@ -3,9 +3,13 @@ import PageHeader from "../../shared/header/PageHeader";
 import ImageSection from "./sections/ImageSection";
 import TextSection from "./sections/TextSection";
 import SelectionSection from "./sections/SelectionSection";
-import FilteredDataSection from "./sections/FilteredDataSection";
+import MarketpriceSection from "./sections/MarketpriceSection";
 
 const MarketContainer = () => {
+
+
+
+  
   return (
     <div className="size-full">
       <PageHeader />
@@ -13,7 +17,7 @@ const MarketContainer = () => {
         <ImageSection />
         <TextSection />
         <SelectionSection />
-        <FilteredDataSection />
+        <MarketpriceSection  />
       </section>
     </div>
   );
