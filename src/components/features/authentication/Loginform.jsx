@@ -42,7 +42,7 @@ function LoginForm({ Showpassword, setShowpassword }) {
 
           toast.success(message);
 
-          Navigate(`/weather/:location/:userid`);
+          Navigate(`/market-price/:id`);
 
           window.location.reload();
         }

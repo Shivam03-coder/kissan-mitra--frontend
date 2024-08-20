@@ -47,13 +47,6 @@ const Authendpoints = Apiservices.injectEndpoints({
         headers,
       }),
     }),
-    getweatherData: build.query({
-      query: ({ latitude, longitude }) => ({
-        url: `/weather/${latitude}/${longitude}`,
-        method: "GET",
-        headers,
-      }),
-    }),
   }),
 });
 
@@ -63,5 +56,4 @@ export const {
   usePasswordChangeMutation,
   useLogoutUserMutation,
   useSignoutUserMutation,
-  useGetweatherDataQuery
 } = Authendpoints;

@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import { useGeolocation } from "../../../hooks/useGeolocation";
-import { useGetweatherDataQuery } from "../../../redux/endpoints/userauthapi";
-import HeaderSection from "./HeaderSection";
 import TodaysWeather from "./sections/TodaysWeather";
 import WeeklyWeather from "./sections/WeeklyWeather";
 import Mainloader from "../../shared/apploaders/Mainloader"
@@ -12,6 +10,8 @@ import {
   setWeeklyWeatherData,
 } from "../../../redux/states/weatherdataSlice";
 import { useDispatch } from "react-redux";
+import PageHeader from "../../shared/header/PageHeader";
+import { useGetweatherDataQuery } from "../../../redux/endpoints/appdataapi";
 
 const WeatherContainer = () => {
   const location = useGeolocation();
@@ -46,7 +46,7 @@ const WeatherContainer = () => {
 
   return (
     <div className="size-full">
-      <HeaderSection />
+      <PageHeader />
       <div className="grid z-40 py-4 md:grid-cols-2 min-h-[90vh] w-full">
         <TodaysWeather />
         <WeeklyWeather />

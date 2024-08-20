@@ -1,6 +1,7 @@
 import logo from "../assets/imgs/png/logo.png";
 import leaf from "../assets/imgs/jpg/leaf.jpg";
 import crops from "../assets/imgs/jpg/crops.jpg";
+import marketcrop from "../assets/imgs/jpg/marketcrop.jpg";
 import eco from "../assets/imgs/png/eco.png";
 import fresh from "../assets/imgs/png/fresh.png";
 import safe from "../assets/imgs/png/safe.png";
@@ -25,6 +26,7 @@ export const marketimg = market;
 export const plantdiseaseimg = plantdisease;
 export const weatherimg = weather;
 export const fertilizerimg = fertilizer;
+export const MarketCropsImg = marketcrop;
 
 // ICONS
 
