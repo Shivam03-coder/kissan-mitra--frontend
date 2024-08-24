@@ -15,6 +15,11 @@ import {
   TempIcon,
   WindIcon,
   HumidityIcon,
+  PhImg,
+  NitrogenImg,
+  RainingImg,
+  PhosphorousImg,
+  PotassiumImg,
 } from "../constants";
 
 export const ServicecardData = [
@@ -156,5 +161,40 @@ export const TodaysForecastData = [
   {
     id: 5,
     time: "9:00",
+  },
+];
+
+
+export const FertilizerPageInfoData = [
+
+  {
+    id: 2,
+    img: NitrogenImg,
+    label: "Nitrogen",
+    content: "Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids."
+  },
+  {
+    id: 3,
+    img: RainingImg,
+    label: "Rainfall",
+    content: "Rainfall provides the water necessary for plant growth, affecting soil moisture and nutrient availability."
+  },
+  {
+    id: 4,
+    img: PhosphorousImg,
+    label: "Phosphorous",
+    content: "Phosphorous supports the development of roots, flowers, seeds, and fruits in plants."
+  },
+  {
+    id: 5,
+    img: PotassiumImg,
+    label: "Potassium",
+    content: "Potassium helps with the overall health of plants, improving disease resistance and water efficiency."
+  },
+    {
+    id: 1,
+    img: PhImg,
+    label: "pH Level",
+    content: "pH measures the acidity or alkalinity of soil, which is important for nutrient availability and plant growth."
   },
 ];

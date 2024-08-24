@@ -3,7 +3,7 @@ import { Card, Input, Button, Typography } from "@material-tailwind/react";
 
 const FormSection = () => {
   return (
-    <section className="bg-green-200 flex-center  py-8">
+    <section className="bg-green-200 h-full flex-center   py-8">
       <Card color="transparent" shadow={false}>
         <Typography className="text-black  font-TitilliumWeb" variant="h2">
           Find Out The Most Suitable Crop <br /> To Grow In Your Farm
@@ -72,7 +72,7 @@ const FormSection = () => {
               variant="h5"
               className=" text-black font-TitilliumWeb -mb-3"
             >
-              Rainfall 
+              Rainfall
             </Typography>
             <Input
               type="text"

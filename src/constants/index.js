@@ -11,6 +11,11 @@ import weather from "../assets/imgs/png/weather.png";
 import plantdisease from "../assets/imgs/png/plantdisease.png";
 import market from "../assets/imgs/png/market.png";
 import Yield from "../assets/imgs/png/yield.png";
+import potassium from "../assets/imgs/png/potassium.png";
+import phosphorous from "../assets/imgs/png/phosphorous.png";
+import raining from "../assets/imgs/png/raining.png";
+import ph from "../assets/imgs/png/ph.png";
+import nitrogen from "../assets/imgs/png/nitrogen.png";
 
 // IMAGES
 
@@ -27,6 +32,12 @@ export const plantdiseaseimg = plantdisease;
 export const weatherimg = weather;
 export const fertilizerimg = fertilizer;
 export const MarketCropsImg = marketcrop;
+
+export const PhImg = ph;
+export const NitrogenImg = nitrogen;
+export const RainingImg = raining;
+export const PhosphorousImg = phosphorous;
+export const PotassiumImg = potassium;
 
 // ICONS
 

@@ -1,18 +1,31 @@
 import React from "react";
+import { FertilizerPageInfoData } from "../../../../data";
+import { Typography } from "@material-tailwind/react";
 
 const InfoSection = () => {
   return (
-    <section>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. A aliquam soluta
-      esse ullam voluptatibus ea minus dignissimos deleniti vel commodi adipisci
-      repellat voluptas similique ratione quidem, debitis dolor dicta iusto
-      magni fugiat tenetur eum culpa in! Voluptatum amet sit veritatis incidunt
-      magnam rerum eaque eos sint? Numquam ad maxime enim sit? Beatae provident
-      quod odit eligendi rerum libero praesentium, at, non nemo suscipit,
-      architecto culpa quos atque earum reprehenderit tempore? Nobis maxime nam
-      totam tenetur? Sunt deserunt accusantium a excepturi ducimus impedit dicta
-      asperiores. Perferendis at quidem consequuntur quod atque. Saepe dicta
-      voluptatem, voluptas fugiat magnam perspiciatis reiciendis eveniet natus?
+    <section className="grid grid-rows-4  place-content-center place-items-start md:place-self-stretch p-9 min-h-screen">
+      {FertilizerPageInfoData.map((info, index) => {
+        return (
+          <div
+            key={info.id}
+            className="text-primary flex-center gap-5"
+          >
+              <img className="size-[5rem]" src={info.img} alt="IMAGE" />
+            <Typography as={"div"}>
+              <Typography className="font-Varela" as={"title"} variant="h4">
+                {info.label}
+              </Typography>
+              <Typography
+                variant={"h4"}
+                className="ShowOndesktopOnly text-lg font-Roboto font-normal opacity-90 hidden md:block"
+              >
+                {info.content}
+              </Typography>
+            </Typography>
+          </div>
+        );
+      })}
     </section>
   );
 };
