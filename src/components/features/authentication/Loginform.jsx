@@ -42,7 +42,7 @@ function LoginForm({ Showpassword, setShowpassword }) {
 
           toast.success(message);
 
-          Navigate(`/market-price/:id`);
+          Navigate(`/crops-fertilizer/:id`);
 
           window.location.reload();
         }

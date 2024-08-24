@@ -127,6 +127,10 @@ export default withMT({
         ".overlay-content": {
           "@apply absolute h-full w-full top-0 left-0": {},
         },
+        ".InputBoxCustom": {
+          "@apply !border-black !text-xl px-3 shadow-3xl !text-black focus:!border-t-gray-900 placeholder:text-black placeholder:text-lg shadow-3xl !bg-white":
+            {},
+        },
       });
     },
   ],
