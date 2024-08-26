@@ -75,6 +75,28 @@ export default withMT({
     },
 
     extend: {
+      backgroundImage: {
+        "custom-green-gradient":
+          "linear-gradient(292deg, rgba(186,255,228,1) 0%, rgba(255,255,255,1) 100%)",
+        "custom-greenlight-gradient":
+          "linear-gradient(292deg, rgba(52,191,103,1) 0%, rgba(255,255,255,1) 100%)",
+        "custom-greentransparent-gradient":
+          "linear-gradient(172deg, rgba(52,191,103,1) 0%, rgba(82,66,12,0) 100%)",
+        "custom-light-green-to-white":
+          "linear-gradient(172deg, rgba(122,255,171,1) 0%, rgba(255,210,56,0.26094187675070024) 100%)",
+        "custom-white-with-light-green-edges":
+          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,255,228,0.4) 70%, rgba(186,255,228,1) 100%)",
+        "custom-light-yellow-to-light-green":
+          "linear-gradient(180deg, rgba(255,255,204,1) 0%, rgba(186,255,228,1) 100%)",
+        "custom-light-green-to-light-yellow-center":
+          "linear-gradient(180deg, rgba(186,255,228,1) 0%, rgba(255,255,204,1) 50%, rgba(186,255,228,1) 100%)",
+        "custom-light-yellow-to-transparent-green":
+          "linear-gradient(180deg, rgba(255,255,204,1) 0%, rgba(186,255,228,0) 100%)",
+        "custom-diagonal-light-yellow-to-light-green":
+          "linear-gradient(135deg, rgba(255,255,204,1) 0%, rgba(186,255,228,1) 100%)",
+        "custom-light-green-to-light-yellow-soft":
+          "linear-gradient(180deg, rgba(186,255,228,1) 0%, rgba(255,255,204,0.7) 100%)",
+      },
       utilities: {
         ".scrollbar-hidden": {
           "-ms-overflow-style": "none",
@@ -128,7 +150,7 @@ export default withMT({
           "@apply absolute h-full w-full top-0 left-0": {},
         },
         ".InputBoxCustom": {
-          "@apply !border-black !text-xl px-3 shadow-3xl !text-black focus:!border-t-gray-900 placeholder:text-black placeholder:text-lg shadow-3xl !bg-white":
+          "@apply !border-black !text-xl px-3 shadow-3xl !text-black  placeholder:text-black placeholder:text-lg shadow-3xl !bg-white":
             {},
         },
       });

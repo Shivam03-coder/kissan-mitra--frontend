@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Phytopathologiespge = () => {
+const DataSection = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Phytopathologiespge = () => {
   )
 }
 
-export default Phytopathologiespge
+export default DataSection

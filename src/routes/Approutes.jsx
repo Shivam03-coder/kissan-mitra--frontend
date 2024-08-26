@@ -3,13 +3,18 @@ import { lazy } from "react";
 const Homepage = lazy(() => import("../components/pages/Homepage"));
 const UserAuthpage = lazy(() => import("../components/pages/UserAuthpage"));
 const Weatherpage = lazy(() => import("../components/pages/Weatherpage"));
-const Yieldpage = lazy(() => import("../components/pages/Yieldproductionpage"));
-const Pestspage = lazy(() => import("../components/pages/Phytopathologiespge"));
+const YieldPredictionpage = lazy(() => import("../components/pages/YieldPredictionpage"));
+const DiseasePredictionpage = lazy(() => import("../components/pages/DiseasePredictionpage"));
 const Profilepage = lazy(() => import("../components/pages/Userprofilepage"));
 const Errorpage = lazy(() => import("../components/pages/Errorpage"));
 const Notfoundpage = lazy(() => import("../components/pages/Notfoundpage"));
 const Marketpage = lazy(() => import("../components/pages/Marketpricepage"));
-const Fertilizerpage = lazy(() => import("../components/pages/Fertilizerpage"));
+const CropPredictionpage = lazy(() =>
+  import("../components/pages/CropPredictionpage")
+);
+const FertilizerPredictionpage = lazy(() =>
+  import("../components/pages/FertilizerPredictionpage")
+);
 
 export const publicRoutes = [
   {
@@ -36,20 +41,24 @@ export const privateRoutes = [
     element: Weatherpage,
   },
   {
-    path: "/crop-yield/:userid",
-    element: Yieldpage,
+    path: "/crop-yield-prediction/:userid",
+    element: YieldPredictionpage,
   },
   {
-    path: "/plants-disease/:id",
-    element: Pestspage,
+    path: "/plants-disease-prediction/:id",
+    element: DiseasePredictionpage,
   },
   {
     path: "/market-price/:id",
     element: Marketpage,
   },
   {
-    path: "/crops-fertilizer/:id",
-    element: Fertilizerpage,
+    path: "/crop-prediction/:id",
+    element: CropPredictionpage,
+  },
+  {
+    path: "/fertilizer-prediction/:id",
+    element: FertilizerPredictionpage,
   },
   {
     path: "/user-profile/:id",

@@ -6,7 +6,7 @@ import { getTodaysDate } from "../../../utils";
 const PageHeader = () => {
   const ToDaysDay = getTodaysDate();
   return (
-    <nav className="sticky z-40 bg-green-100 border-b-2 border-black top-0">
+    <nav className="sticky z-40 bg-green-100  top-0">
       <header className="flex px-10 py-1 md:px-0 justify-between md:justify-between items-center min-h-[10vh] w-full md:w-[85%] bg-transparent backdrop-blur-sm mx-auto">
         <div className=" max-w-[50%] md:max-w-[30%] break-words md:text-center">
           <Typography className="text-lg md:text-2xl font-semibold">

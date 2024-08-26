@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Yieldproductionpage() {
+
+const DataSection = () => {
   return (
     <div>
       
     </div>
   )
 }
+
+export default DataSection

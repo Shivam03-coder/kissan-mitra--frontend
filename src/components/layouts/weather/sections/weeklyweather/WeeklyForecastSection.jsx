@@ -5,7 +5,7 @@ const WeeklyForecastSection = () => {
   return (
     <section className="w-[96%] flex-1 md:w-[80%] mx-auto rounded-2xl shadow-glass  p-4 my-4 flex  flex-col items-center">
     <Typography
-        className="w-[90%] flex justify-center mb-0 bg-green-100 shadow-inner rounded-3xl  text-black   items-center font-Inter py-3 "
+        className="w-[90%] flex justify-center mb-0 bg-custom-light-yellow-to-light-green shadow-inner rounded-3xl  text-black   items-center font-Inter py-3 "
         variant="h4"
       >
         WEEKLY FORECAST

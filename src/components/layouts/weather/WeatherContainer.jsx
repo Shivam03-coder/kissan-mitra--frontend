@@ -10,7 +10,6 @@ import {
   setWeeklyWeatherData,
 } from "../../../redux/states/weatherdataSlice";
 import { useDispatch } from "react-redux";
-import PageHeader from "../../shared/header/PageHeader";
 import { useGetweatherDataQuery } from "../../../redux/endpoints/appdataapi";
 
 const WeatherContainer = () => {
@@ -45,8 +44,7 @@ const WeatherContainer = () => {
   }
 
   return (
-    <div className="size-full">
-      <PageHeader />
+    <div className="size-full bg-custom-light-green-to-white">
       <div className="grid z-40 py-4 md:grid-cols-2 min-h-[90vh] w-full">
         <TodaysWeather />
         <WeeklyWeather />

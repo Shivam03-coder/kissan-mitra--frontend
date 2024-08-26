@@ -17,7 +17,7 @@ const DaysForecastSection = () => {
       {WeeklyWeatherData?.map((weather, i) => (
         <section
           key={weather._id}
-          className="flex justify-evenly items-center bg-yellow-500 shadow-glass-card  rounded-xl py-6 md:py-1"
+          className="flex justify-evenly items-center bg-custom-light-yellow-to-light-green shadow-glass-card  rounded-xl py-6 md:py-1"
         >
           <div className="flex-center flex-col">
             <Typography

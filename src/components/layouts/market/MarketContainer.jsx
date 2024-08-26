@@ -12,8 +12,7 @@ const MarketContainer = () => {
   
   return (
     <div className="size-full">
-      <PageHeader />
-      <section className="space-y-4">
+      <section className="space-y-4 bg-custom-green-gradient">
         <ImageSection />
         <TextSection />
         <SelectionSection />

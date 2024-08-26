@@ -12,7 +12,6 @@ import {
   Insectsicon,
   Graphicon,
   Cloudicon,
-  TempIcon,
   WindIcon,
   HumidityIcon,
   PhImg,
@@ -164,37 +163,91 @@ export const TodaysForecastData = [
   },
 ];
 
-
 export const FertilizerPageInfoData = [
-
   {
     id: 2,
     img: NitrogenImg,
     label: "Nitrogen",
-    content: "Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids."
+    content:
+      "Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids.",
   },
   {
     id: 3,
     img: RainingImg,
     label: "Rainfall",
-    content: "Rainfall provides the water necessary for plant growth, affecting soil moisture and nutrient availability."
+    content:
+      "Rainfall provides the water necessary for plant growth, affecting soil moisture and nutrient availability.",
   },
   {
     id: 4,
     img: PhosphorousImg,
     label: "Phosphorous",
-    content: "Phosphorous supports the development of roots, flowers, seeds, and fruits in plants."
+    content:
+      "Phosphorous supports the development of roots, flowers, seeds, and fruits in plants.",
   },
   {
     id: 5,
     img: PotassiumImg,
     label: "Potassium",
-    content: "Potassium helps with the overall health of plants, improving disease resistance and water efficiency."
+    content:
+      "Potassium helps with the overall health of plants, improving disease resistance and water efficiency.",
   },
-    {
+  {
     id: 1,
     img: PhImg,
     label: "pH Level",
-    content: "pH measures the acidity or alkalinity of soil, which is important for nutrient availability and plant growth."
+    content:
+      "pH measures the acidity or alkalinity of soil, which is important for nutrient availability and plant growth.",
   },
+];
+
+export const navListMenuItems = [
+  {
+    title: "Weather",
+    description: "Find the perfect solution for your needs.",
+    icon: Insectsicon,
+    path: "/weather/:location/:userid",
+  },
+  {
+    title: "Crop Yield Prediction",
+    description: "Meet and learn about our dedication",
+    icon: Insectsicon,
+    path: "/crop-yield-prediction/:userid",
+  },
+  {
+    title: "Plant Disease Prediction",
+    description: "Find the perfect solution for your needs.",
+    icon: Insectsicon,
+    path: "/plants-disease-prediction/:id",
+  },
+  {
+    title: "Market Price",
+    description: "Learn how we can help you achieve your goals.",
+    icon: Insectsicon,
+    path: "/market-price/:id",
+  },
+  {
+    title: "Crop Prediction",
+    description: "Reach out to us for assistance or inquiries",
+    icon: Insectsicon,
+    path: "/crop-prediction/:id",
+  },
+  {
+    title: "Fertilizer Prediction",
+    description: "Find the perfect solution for your needs.",
+    icon: Insectsicon,
+    path: "/fertilizer-prediction/:id",
+  },
+  // {
+  //   title: "News",
+  //   description: "Read insightful articles, tips, and expert opinions.",
+  //   icon: Insectsicon,
+  //   path: "/news",
+  // },
+  // {
+  //   title: "Blog",
+  //   description: "Find the perfect solution for your needs.",
+  //   icon: Insectsicon,
+  //   path: "/blog",
+  // },
 ];

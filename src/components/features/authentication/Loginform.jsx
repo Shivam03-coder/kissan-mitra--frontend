@@ -1,6 +1,5 @@
 import {
   Input,
-  Checkbox,
   Button,
   Typography,
   Spinner,
@@ -42,7 +41,7 @@ function LoginForm({ Showpassword, setShowpassword }) {
 
           toast.success(message);
 
-          Navigate(`/crops-fertilizer/:id`);
+          Navigate(`/crop-prediction/:id`);
 
           window.location.reload();
         }
