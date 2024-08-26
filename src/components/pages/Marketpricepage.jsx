@@ -1,5 +1,5 @@
 import React from "react";
-import MarketContainer from "../layouts/market/MarketContainer";
+import MarketContainer from "../layouts/market-price/MarketContainer";
 
 const Marketpricepage = () => {
   return (

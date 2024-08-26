@@ -1,14 +1,149 @@
 {
-  "contentSection": {
-    "weAreThe": "We Are The",
-    "kissanMitra": "Kissan Mitra",
-    "empoweringFarmers": "Empowering Farmers, Growing Together",
-    "moreInfo": "More info",
-    "empoweringFarmersWithInsights": "Empowering Farmers with Real-Time Insights and Community Support"
+  "Home": {
+    "contentSection": {
+      "weAreThe": "We Are The",
+      "kissanMitra": "Kissan Mitra",
+      "empoweringFarmers": "Empowering Farmers, Growing Together",
+      "moreInfo": "More info",
+      "empoweringFarmersWithInsights": "Empowering Farmers with Real-Time Insights and Community Support"
+    },
+    "serviceContent": {
+      "title": "At Kissan Mitra, we provide cutting-edge technology to support farmers in their daily activities.",
+      "subtitle": "At Kissan Mitra, we're committed to equipping farmers with the latest technology, designed to enhance productivity.",
+      "checkout": "CHECKOUT"
+    },
+    "servicecards": {
+      "title": "Comprehensive Services to Enhance Your Farming Experience",
+      "weatherupdates": "Weather Updates",
+      "markettrends": "Market Trends",
+      "checkplantdisease": "Check Plant Disease",
+      "findbestfertilizer": "Find Best Fertilizer",
+      "calculateyield": "Calculate Yield"
+    },
+    "propcards": {
+      "title": "Empowering Farmers with Smart Solutions - Kissan Mitra",
+      "eco": "Eco",
+      "fresh": "Fresh",
+      "safe": "Safe",
+      "easy": "Easy"
+    },
+    "footer": {
+      "product": "Product",
+      "overview": "Overview",
+      "features": "Features",
+      "company": "Company",
+      "aboutUs": "About us",
+      "careers": "Careers",
+      "resource": "Resource",
+      "blog": "Blog",
+      "newsletter": "Newsletter",
+      "contactsection": {
+        "placeholder": "SEND MESSAGE TO ORGANIZATION",
+        "sendButton": "SEND"
+      }
+    }
   },
-  "serviceContent": {
-    "title": "At Kissan Mitra, we provide cutting-edge technology to support farmers in their daily activities.",
-    "subtitle": "At Kissan Mitra, we're committed to equipping farmers with the latest technology, designed to enhance productivity.",
-    "checkout": "CHECKOUT"
+  "Navbar": {
+    "title": "SERVICES",
+    "weather": "Weather",
+    "weather_description": "Get accurate weather updates for your location.",
+    "crop_yield_prediction": "Crop Yield Prediction",
+    "crop_yield_prediction_description": "Predict the yield of your crops with advanced analytics.",
+    "plant_disease_prediction": "Plant Disease Prediction",
+    "plant_disease_prediction_description": "Identify and predict potential plant diseases early.",
+    "market_price": "Market Price",
+    "market_price_description": "Get the latest market prices for your crops and products.",
+    "crop_prediction": "Crop Prediction",
+    "crop_prediction_description": "Forecast which crops are best to plant this season.",
+    "fertilizer_prediction": "Fertilizer Prediction",
+    "fertilizer_prediction_description": "Determine the optimal fertilizer for your crops.",
+    "navList": {
+      "home": "HOME",
+      "contact_us": "CONTACT-US"
+    }
+  },
+  "Weather": {
+    "currentWeather": {
+      "title": "CURRENT WEATHER"
+    },
+    "todayForecast": {
+      "title": "TODAY'S TEMPERATURE"
+    },
+    "airCondition": {
+      "title": "AIR CONDITIONS"
+    },
+    "weeklyForecast": {
+      "title": "WEEKLY FORECAST"
+    }
+  },
+  "crop-yeild": {
+    "title": "Yield Prediction Form",
+    "temperature": "Temperature",
+    "rain": "Rainfall",
+    "state": "State",
+    "crop-type": "Crop Type",
+    "crop": "Crop",
+    "nitrogen": "Nitrogen",
+    "potassium": "Potassium",
+    "phosphorous": "Phosphorous",
+    "ph-level": "PH Level",
+    "area": "Area",
+    "button": "PREDICT"
+  },
+  "fertilizer-prediction": {
+    "title": "Fertilizer Prediction Form",
+    "city": "City",
+    "moisture": "Moisture",
+    "soil-type": "State",
+    "crop": "Crop",
+    "nitrogen": "Nitrogen",
+    "potassium": "Potassium",
+    "phosphorous": "Phosphorous",
+    "button": "PREDICT"
+  },
+  "crop-prediction": {
+    "title": "Crop Prediction Form",
+    "nitrogen": "Nitrogen",
+    "phosphorous": "Phosphorous",
+    "potassium": "Potassium",
+    "ph-level": "PH Level",
+    "rain": "Rainfall",
+    "city": "Your City",
+    "button": "PREDICT"
+  },
+  "disease-prediction": {
+    "title": " Disease Prediction Form",
+    "label": "Upload Image",
+    "button": "PREDICT"
+  },
+  "market-price": {
+    "text-section": {
+      "heading": "Access MSP Information with Ease",
+      "paragraph": "Our platform empowers users to effortlessly find the Minimum Support Price (MSP) of various agricultural products within their locality."
+    }
+  },
+  "Appinfo": {
+    "fertilizerInfo": {
+      "nitrogen": {
+        "label": "Nitrogen",
+        "content": "Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids."
+      },
+      "rainfall": {
+        "label": "Rainfall",
+        "content": "Rainfall provides the water necessary for plant growth, affecting soil moisture and nutrient availability."
+      },
+      "phosphorous": {
+        "label": "Phosphorous",
+        "content": "Phosphorous supports the development of roots, flowers, seeds, and fruits in plants."
+      },
+      "potassium": {
+        "label": "Potassium",
+        "content": "Potassium helps with the overall health of plants, improving disease resistance and water efficiency."
+      },
+      "phLevel": {
+        "label": "pH Level",
+        "content": "pH measures the acidity or alkalinity of soil, which is important for nutrient availability and plant growth."
+      }
+    }
   }
 }

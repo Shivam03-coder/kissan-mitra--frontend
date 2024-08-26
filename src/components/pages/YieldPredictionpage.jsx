@@ -1,5 +1,5 @@
 import React from "react";
-import YieldPredictionContainer from "../layouts/yield-prediction/YieldPredictionContainer";
+import YieldPredictionContainer from "../layouts/crop-yield-prediction/YieldPredictionContainer";
 
 export default function YieldPredictionpage() {
   return (

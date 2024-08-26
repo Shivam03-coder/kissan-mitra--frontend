@@ -54,6 +54,9 @@ import { CiTempHigh } from "react-icons/ci";
 import { PiWindThin } from "react-icons/pi";
 import { WiHumidity } from "react-icons/wi";
 import { BsCloudRain } from "react-icons/bs";
+import { GiFertilizerBag } from "react-icons/gi";
+import { PiGrains } from "react-icons/pi";
+import { CgTrees } from "react-icons/cg";
 
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
@@ -71,3 +74,6 @@ export const TempIcon = CiTempHigh;
 export const WindIcon = PiWindThin;
 export const HumidityIcon = WiHumidity;
 export const RainIcon = BsCloudRain;
+export const FertlizerIcon = GiFertilizerBag;
+export const GrainsIcon = PiGrains;
+export const CgTreesIcons = CgTrees;

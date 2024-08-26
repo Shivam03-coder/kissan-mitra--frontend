@@ -19,6 +19,10 @@ import {
   RainingImg,
   PhosphorousImg,
   PotassiumImg,
+  RainyCloudIcon,
+  GrainsIcon,
+  CgTreesIcons,
+  FertlizerIcon,
 } from "../constants";
 
 export const ServicecardData = [
@@ -104,21 +108,6 @@ export const AppinfoData = [
   },
 ];
 
-export const Footerlinks = [
-  {
-    title: "Product",
-    items: ["Overview", "Features"],
-  },
-  {
-    title: "Company",
-    items: ["About us", "Careers"],
-  },
-  {
-    title: "Resource",
-    items: ["Blog", "Newsletter"],
-  },
-];
-
 export const AircondtionsData = [
   {
     id: 1,
@@ -163,91 +152,78 @@ export const TodaysForecastData = [
   },
 ];
 
-export const FertilizerPageInfoData = [
+
+
+export const FertilizerPageInfoData = (t) => [
   {
     id: 2,
     img: NitrogenImg,
-    label: "Nitrogen",
-    content:
-      "Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids.",
+    label: t('Appinfo.fertilizerInfo.nitrogen.label'),
+    content: t('Appinfo.fertilizerInfo.nitrogen.content'),
   },
   {
     id: 3,
     img: RainingImg,
-    label: "Rainfall",
-    content:
-      "Rainfall provides the water necessary for plant growth, affecting soil moisture and nutrient availability.",
+    label: t('Appinfo.fertilizerInfo.rainfall.label'),
+    content: t('Appinfo.fertilizerInfo.rainfall.content'),
   },
   {
     id: 4,
     img: PhosphorousImg,
-    label: "Phosphorous",
-    content:
-      "Phosphorous supports the development of roots, flowers, seeds, and fruits in plants.",
+    label: t('Appinfo.fertilizerInfo.phosphorous.label'),
+    content: t('Appinfo.fertilizerInfo.phosphorous.content'),
   },
   {
     id: 5,
     img: PotassiumImg,
-    label: "Potassium",
-    content:
-      "Potassium helps with the overall health of plants, improving disease resistance and water efficiency.",
+    label: t('Appinfo.fertilizerInfo.potassium.label'),
+    content: t('Appinfo.fertilizerInfo.potassium.content'),
   },
   {
     id: 1,
     img: PhImg,
-    label: "pH Level",
-    content:
-      "pH measures the acidity or alkalinity of soil, which is important for nutrient availability and plant growth.",
+    label: t('Appinfo.fertilizerInfo.phLevel.label'),
+    content: t('Appinfo.fertilizerInfo.phLevel.content'),
   },
 ];
 
+
 export const navListMenuItems = [
   {
-    title: "Weather",
-    description: "Find the perfect solution for your needs.",
-    icon: Insectsicon,
+    title: "Navbar.weather",
+    description: "Navbar.weather_description",
+    icon: RainyCloudIcon,
     path: "/weather/:location/:userid",
   },
   {
-    title: "Crop Yield Prediction",
-    description: "Meet and learn about our dedication",
-    icon: Insectsicon,
+    title: "Navbar.crop_yield_prediction",
+    description: "Navbar.crop_yield_prediction_description",
+    icon: GrainsIcon,
     path: "/crop-yield-prediction/:userid",
   },
   {
-    title: "Plant Disease Prediction",
-    description: "Find the perfect solution for your needs.",
+    title: "Navbar.plant_disease_prediction",
+    description: "Navbar.plant_disease_prediction_description",
     icon: Insectsicon,
     path: "/plants-disease-prediction/:id",
   },
   {
-    title: "Market Price",
-    description: "Learn how we can help you achieve your goals.",
-    icon: Insectsicon,
+    title: "Navbar.market_price",
+    description: "Navbar.market_price_description",
+    icon: Graphicon,
     path: "/market-price/:id",
   },
   {
-    title: "Crop Prediction",
-    description: "Reach out to us for assistance or inquiries",
-    icon: Insectsicon,
+    title: "Navbar.crop_prediction",
+    description: "Navbar.crop_prediction_description",
+    icon: CgTreesIcons,
     path: "/crop-prediction/:id",
   },
   {
-    title: "Fertilizer Prediction",
-    description: "Find the perfect solution for your needs.",
-    icon: Insectsicon,
+    title: "Navbar.fertilizer_prediction",
+    description: "Navbar.fertilizer_prediction_description",
+    icon: FertlizerIcon,
     path: "/fertilizer-prediction/:id",
   },
-  // {
-  //   title: "News",
-  //   description: "Read insightful articles, tips, and expert opinions.",
-  //   icon: Insectsicon,
-  //   path: "/news",
-  // },
-  // {
-  //   title: "Blog",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: Insectsicon,
-  //   path: "/blog",
-  // },
 ];
+

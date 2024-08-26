@@ -30,7 +30,8 @@ function Navigationbar() {
       <div className="flex items-center justify-between text-blue-gray-900 w-full">
         <Typography className="text-lg md:text-2xl font-semibold">
           <span className="text-4xl text-pastelGreen-600">THE </span>{" "}
-          <span className="text-3xl text-portgore-600">K</span>ISSAN - MITRA
+          <span className="text-4xl text-portgore-600">K</span>ISSAN -{" "}
+          <span className="text-4xl text-portgore-600">M</span>ITRA
         </Typography>
         <div className="hidden gap-5 lg:flex">
           <div className="hidden  px-5 lg:block">

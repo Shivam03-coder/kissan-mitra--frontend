@@ -1,7 +1,6 @@
 import React from 'react'
 import InfoSection from './sections/InfoSection'
 import FormSection from './sections/FormSection'
-import Navigationbar from '../../shared/navbar/Navigationbar'
 
 const YieldPredictionContainer = () => {
   return (

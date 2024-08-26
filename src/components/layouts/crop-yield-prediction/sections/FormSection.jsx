@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import { YieldPredictionFormSchema } from "../../../shared/validation/FormsValidation";
+import { useTranslation } from "react-i18next";
 
 const initialValues = {
   temperature: "",
@@ -17,6 +18,7 @@ const initialValues = {
 };
 
 const FormSection = () => {
+  const { t } = useTranslation();
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: YieldPredictionFormSchema,
@@ -30,7 +32,7 @@ const FormSection = () => {
     <section className="bg-custom-green-gradient flex-center py-8">
       <Card color="transparent" shadow={false}>
         <Typography className="text-black font-TitilliumWeb" variant="h2">
-          Yield Prediction Form
+        {t('crop-yeild.title')}
         </Typography>
         <form
           onSubmit={handleSubmit}
@@ -43,7 +45,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Temperature (°C)
+                {t('crop-yeild.temperature')} (°C)
               </Typography>
               <Input
                 name="temperature"
@@ -70,7 +72,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Rainfall (mm)
+                 {t('crop-yeild.rain')}
               </Typography>
               <Input
                 name="rainfall"
@@ -97,7 +99,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                State
+                {t('crop-yeild.state')}
               </Typography>
               <Input
                 name="state"
@@ -123,7 +125,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Crop Type
+               {t('crop-yeild.crop-type')}
               </Typography>
               <Input
                 name="crop_type"
@@ -149,7 +151,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Crop
+            {t('crop-yeild.crop')}
               </Typography>
               <Input
                 name="crop"
@@ -175,7 +177,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Nitrogen Level
+                 {t('crop-yeild.nitrogen')}
               </Typography>
               <Input
                 name="nitrogen"
@@ -202,7 +204,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Potassium Level
+                {t('crop-yeild.potassium')}
               </Typography>
               <Input
                 name="potassium"
@@ -229,7 +231,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Phosphorous Level
+               {t('crop-yeild.phosphorous')}
               </Typography>
               <Input
                 name="phosphorous"
@@ -256,7 +258,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                pH Level
+              {t('crop-yeild.ph-level')}
               </Typography>
               <Input
                 name="ph"
@@ -283,7 +285,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Area (hectares)
+                 {t('crop-yeild.area')}
               </Typography>
               <Input
                 name="area"
@@ -303,10 +305,11 @@ const FormSection = () => {
                 </Typography>
               )}
             </div>
+            
           </div>
 
           <Button type="submit" className="mt-6 bg-green-900 text-xl" fullWidth>
-            PREDICT
+          {t('crop-yeild.button')}
           </Button>
         </form>
       </Card>

@@ -11,16 +11,18 @@ import {
 } from "@material-tailwind/react";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next'; // Import the hook
 
 function NavListMenu() {
+  const { t } = useTranslation(); // Initialize the hook
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, path }, key) => (
       <Link to={path} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg">
           <div className="flex items-center justify-center rounded-lg !bg-pastelGreen-500 p-2 ">
-            {" "}
             {createElement(icon, {
               strokeWidth: 2,
               className: "h-6 text-gray-900 w-6",
@@ -32,13 +34,13 @@ function NavListMenu() {
               color="blue-gray"
               className="flex items-center text-sm font-bold"
             >
-              {title}
+              {t(title)}
             </Typography>
             <Typography
               variant="paragraph"
               className="text-xs !font-medium text-blue-gray-500"
             >
-              {description}
+              {t(description)} {/* Translate the description */}
             </Typography>
           </div>
         </MenuItem>
@@ -66,7 +68,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              SERVICES
+              {t('Navbar.title')} 
               <FaAngleDown
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${

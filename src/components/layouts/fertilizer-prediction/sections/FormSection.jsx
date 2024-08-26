@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import { FertilizerPredictionFormSchema } from "../../../shared/validation/FormsValidation";
+import { useTranslation } from "react-i18next";
 const initialValues = {
   city: "",
   moisture: "",
@@ -13,6 +14,7 @@ const initialValues = {
 };
 
 const FormSection = () => {
+  const { t } = useTranslation();
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: FertilizerPredictionFormSchema,
@@ -26,7 +28,7 @@ const FormSection = () => {
     <section className="bg-custom-green-gradient flex-center py-8">
       <Card color="transparent" shadow={false}>
         <Typography className="text-black font-TitilliumWeb" variant="h2">
-          Fertilizer Prediction Form
+        {t('fertilizer-prediction.title')}
         </Typography>
         <form
           onSubmit={handleSubmit}
@@ -39,7 +41,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                City
+                {t('fertilizer-prediction.city')}
               </Typography>
               <Input
                 name="city"
@@ -65,7 +67,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Moisture
+                {t('fertilizer-prediction.moisture')}
               </Typography>
               <Input
                 name="moisture"
@@ -91,7 +93,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Soil Type
+              {t('fertilizer-prediction.soil-type')}
               </Typography>
               <Input
                 name="soil_type"
@@ -117,7 +119,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Crop
+             {t('fertilizer-prediction.crop')}
               </Typography>
               <Input
                 name="crop"
@@ -143,7 +145,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Nitrogen
+                {t('fertilizer-prediction.nitrogen')}
               </Typography>
               <Input
                 name="nitrogen"
@@ -169,7 +171,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Potassium
+                {t('fertilizer-prediction.potassium')}
               </Typography>
               <Input
                 name="potassium"
@@ -195,7 +197,7 @@ const FormSection = () => {
                 variant="h5"
                 className="text-black font-TitilliumWeb -mb-3"
               >
-                Phosphorous
+                {t('fertilizer-prediction.phosphorous')}
               </Typography>
               <Input
                 name="phosphorous"
@@ -217,7 +219,7 @@ const FormSection = () => {
           </div>
 
           <Button type="submit" className="mt-6 bg-green-900 text-xl" fullWidth>
-            PREDICT
+          {t('fertilizer-prediction.button')}
           </Button>
         </form>
       </Card>
