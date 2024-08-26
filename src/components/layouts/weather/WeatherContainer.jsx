@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useGeolocation } from "../../../hooks/useGeolocation";
 import TodaysWeather from "./sections/TodaysWeather";
 import WeeklyWeather from "./sections/WeeklyWeather";
-import Mainloader from "../../shared/apploaders/Mainloader"
 import {
   clearWeatherData,
   setThreeHoursWeatherData,
@@ -11,6 +10,7 @@ import {
 } from "../../../redux/states/weatherdataSlice";
 import { useDispatch } from "react-redux";
 import { useGetweatherDataQuery } from "../../../redux/endpoints/appdataapi";
+import PageLoader from "../../shared/apploaders/PageLoader";
 
 const WeatherContainer = () => {
   const location = useGeolocation();
@@ -36,7 +36,7 @@ const WeatherContainer = () => {
   }, [location, isSuccess, data, error, dispatch]);
 
   if (!isSuccess && !error) {
-    return <Mainloader />;
+    return <PageLoader />;
   }
 
   if (error) {

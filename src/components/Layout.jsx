@@ -1,23 +1,21 @@
 import React, { Suspense } from "react";
-import "./Layout.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { privateRoutes, publicRoutes } from "../routes/Approutes";
 import PrivateRoute from "../routes/Privateroute";
 import Mainloader from "./shared/apploaders/Mainloader";
 import Navigationbar from "./shared/navbar/Navigationbar";
+import "./Layout.css";
 
 const Layout = () => {
+  const location = useLocation();
+
   return (
     <Suspense fallback={<Mainloader />}>
-      <Navigationbar />
+      {location.pathname !== "/" && <Navigationbar />}
       <Routes>
-        {/*  PUBLIC ROUTES */}
         {publicRoutes.map(({ path, element }) => (
-          <Route key={path} path={path} element={element}></Route>
+          <Route key={path} path={path} element={element} />
         ))}
-
-        {/* PRIVATE ROUTES */}
-
         {privateRoutes.map(({ path, element }) => (
           <Route
             key={path}

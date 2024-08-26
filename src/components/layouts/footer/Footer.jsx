@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <section className="relative pt-10 pb-5">
       <Wavesvg />
-      <footer className="w-full  bg-transparent  p-4">
+      <footer className="w-full  p-4">
         <div className="mx-auto w-full max-w-7xl px-8">
           <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
             <section className="hidden md:block">

@@ -32,8 +32,8 @@ function Navigationbar() {
           <span className="text-4xl text-pastelGreen-600">THE </span>{" "}
           <span className="text-3xl text-portgore-600">K</span>ISSAN - MITRA
         </Typography>
-        <div className="hidden gap-2 lg:flex">
-          <div className="hidden lg:block">
+        <div className="hidden gap-5 lg:flex">
+          <div className="hidden  px-5 lg:block">
             <NavList />
           </div>
           <UserProfile />

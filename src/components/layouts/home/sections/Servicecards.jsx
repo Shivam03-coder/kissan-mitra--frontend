@@ -9,11 +9,11 @@ function Servicecards() {
       <Typography variant="h3" className="text-center">
         Comprehensive Services to Enhance Your Farming Experience
       </Typography>
-      <div className="flex flex-wrap justify-center gap-6 py-8">
+      <div className="flex flex-wrap justify-center  gap-6 py-8">
         {ServicecardData.map(({ id, img, label }, index) => (
           <Card
             key={id}
-            className="w-[300px] md:w-[340px] bg-transparent backdrop-blur-2xl shadow-5xl"
+            className="w-[300px] md:w-[340px] bg-custom-greentransparent-gradient backdrop-blur-2xl shadow-5xl"
           >
             <CardBody className="flex flex-col items-center gap-4 ">
               <img className="size-32 rounded-3xl " src={img} alt="img" />

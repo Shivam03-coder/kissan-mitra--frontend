@@ -25,7 +25,7 @@ function Propcards() {
         {PropcardsData.map(({ id, img, label }, i) => (
           <Card
             key={id}
-            className="mt-6 w-40 md:w-60 bg-pastelGreen-300 flex-center shadow-dark-shadow hover:rounded-none transition-all"
+            className="mt-6 w-40 md:w-60 bg-custom-greenlight-gradient flex-center shadow-dark-shadow hover:rounded-none transition-all"
           >
             <CardBody className="flex-center flex-col gap-4" >
               <img src={img} alt="img" />

@@ -1,9 +1,9 @@
-import { Triangle } from "react-loader-spinner";
+import { Circles } from "react-loader-spinner";
 
-function Mainloader() {
+function PageLoader() {
   return (
-    <div className="w-full h-screen bg-custom-green-gradient flex-center ">
-      <Triangle
+    <div className="w-full h-screen flex-center ">
+      <Circles
         visible={true}
         height="130"
         width="130"
@@ -17,4 +17,4 @@ function Mainloader() {
   );
 }
 
-export default Mainloader;
+export default PageLoader;
