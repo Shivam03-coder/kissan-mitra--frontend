@@ -3,7 +3,7 @@
     "contentSection": {
       "weAreThe": "हम हैं",
       "kissanMitra": "किसान मित्र",
-      "empoweringFarmers": "किसानों को सशक्त बनाना, साथ में बढ़ना",
+      "empoweringFarmers": "किसानों को आत्मनिर्भर बनाना",
       "moreInfo": "अधिक जानकारी",
       "empoweringFarmersWithInsights": "वास्तविक समय की अंतर्दृष्टि और सामुदायिक समर्थन के साथ किसानों को सशक्त बनाना"
     },
@@ -13,16 +13,16 @@
       "checkout": "चेकआउट"
     },
     "servicecards": {
-      "title": "आपके कृषि अनुभव को बेहतर बनाने के लिए व्यापक सेवाएँ",
+      "title": "आपकी खेती को बेहतर बनाने के लिए व्यापक सेवाएँ",
       "weatherupdates": "मौसम अपडेट",
       "markettrends": "बाजार की प्रवृत्तियाँ",
-      "checkplantdisease": "पौधों की बीमारी की जांच करें",
-      "findbestfertilizer": "सर्वश्रेष्ठ उर्वरक खोजें",
-      "calculateyield": "पैदावार की गणना करें"
+      "checkplantdisease": "पौधों के रोगों का निदान करें",
+      "findbestfertilizer": "उचित उर्वरक का चयन करें",
+      "calculateyield": "उपज की गणना करें"
     },
     "propcards": {
       "title": "स्मार्ट सॉल्यूशन्स के साथ किसानों को सशक्त बनाना - किसान मित्र",
-      "eco": "इको",
+      "eco": "पर्यावरण-अनुकूल",
       "fresh": "ताज़ा",
       "safe": "सुरक्षित",
       "easy": "आसान"
