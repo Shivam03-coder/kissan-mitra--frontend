@@ -3,8 +3,12 @@ import { lazy } from "react";
 const Homepage = lazy(() => import("../components/pages/Homepage"));
 const UserAuthpage = lazy(() => import("../components/pages/UserAuthpage"));
 const Weatherpage = lazy(() => import("../components/pages/Weatherpage"));
-const YieldPredictionpage = lazy(() => import("../components/pages/YieldPredictionpage"));
-const DiseasePredictionpage = lazy(() => import("../components/pages/DiseasePredictionpage"));
+const YieldPredictionpage = lazy(() =>
+  import("../components/pages/YieldPredictionpage")
+);
+const DiseasePredictionpage = lazy(() =>
+  import("../components/pages/DiseasePredictionpage")
+);
 const Profilepage = lazy(() => import("../components/pages/Userprofilepage"));
 const Errorpage = lazy(() => import("../components/pages/Errorpage"));
 const Notfoundpage = lazy(() => import("../components/pages/Notfoundpage"));
@@ -15,6 +19,8 @@ const CropPredictionpage = lazy(() =>
 const FertilizerPredictionpage = lazy(() =>
   import("../components/pages/FertilizerPredictionpage")
 );
+const Communitypage = lazy(() => import("../components/pages/Communitypage"));
+const Educationalpage = lazy(() => import("../components/pages/Educationalpage"));
 
 export const publicRoutes = [
   {
@@ -59,6 +65,14 @@ export const privateRoutes = [
   {
     path: "/fertilizer-prediction/:id",
     element: FertilizerPredictionpage,
+  },
+  {
+    path: "/kissan-mitra/comuunity/:id",
+    element: Communitypage,
+  },
+  {
+    path: "/kissan-mitra/education/:id",
+    element: Educationalpage,
   },
   {
     path: "/user-profile/:id",
