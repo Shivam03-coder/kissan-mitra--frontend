@@ -23,6 +23,8 @@ import {
   GrainsIcon,
   CgTreesIcons,
   FertlizerIcon,
+  CommunityIcons,
+  EducationIcon,
 } from "../constants";
 
 export const ServicecardData = [
@@ -224,6 +226,18 @@ export const navListMenuItems = [
     description: "Navbar.fertilizer_prediction_description",
     icon: FertlizerIcon,
     path: "/fertilizer-prediction/:id",
+  },
+  {
+    title: "Navbar.community",
+    description: "Navbar.community_description",
+    icon: CommunityIcons,
+    path: "/kissan-mitra/comuunity/:id",
+  },
+  {
+    title: "Navbar.education",
+    description: "Navbar.education_description",
+    icon: EducationIcon,
+    path: "/kissan-mitra/education/:id",
   },
 ];
 

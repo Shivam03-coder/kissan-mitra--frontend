@@ -57,6 +57,8 @@ import { BsCloudRain } from "react-icons/bs";
 import { GiFertilizerBag } from "react-icons/gi";
 import { PiGrains } from "react-icons/pi";
 import { CgTrees } from "react-icons/cg";
+import { CgCommunity } from "react-icons/cg";
+import { MdCastForEducation } from "react-icons/md";
 
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
@@ -77,3 +79,5 @@ export const RainIcon = BsCloudRain;
 export const FertlizerIcon = GiFertilizerBag;
 export const GrainsIcon = PiGrains;
 export const CgTreesIcons = CgTrees;
+export const CommunityIcons = CgCommunity;
+export const EducationIcon = MdCastForEducation;

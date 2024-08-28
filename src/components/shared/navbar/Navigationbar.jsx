@@ -10,6 +10,7 @@ import { BiAbacus } from "react-icons/bi";
 import { useMediaquery } from "../../../hooks/usemediaQuery";
 import NavList from "./menu/NavList";
 import UserProfile from "../userprofile/UserProfile";
+import { Menucloseicon, Menuopen } from "../../../constants";
 
 function Navigationbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -46,22 +47,14 @@ function Navigationbar() {
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <BiAbacus className="h-6 w-6" strokeWidth={2} />
+            <Menucloseicon className="size-7 text-black" strokeWidth={2} />
           ) : (
-            <BiAbacus className="h-6 w-6" strokeWidth={2} />
+            <Menuopen className="size-7 text-black" strokeWidth={2} />
           )}
         </IconButton>
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-            Log In
-          </Button>
-          <Button variant="gradient" size="sm" fullWidth>
-            Sign In
-          </Button>
-        </div>
       </Collapse>
     </Navbar>
   );

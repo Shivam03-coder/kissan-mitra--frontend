@@ -1,9 +1,4 @@
-import {
-  Input,
-  Button,
-  Typography,
-  Spinner,
-} from "@material-tailwind/react";
+import { Input, Button, Typography, Spinner } from "@material-tailwind/react";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -41,7 +36,7 @@ function LoginForm({ Showpassword, setShowpassword }) {
 
           toast.success(message);
 
-          Navigate(`/crop-prediction/:id`);
+          Navigate("/");
 
           window.location.reload();
         }

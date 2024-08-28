@@ -57,6 +57,10 @@
     "crop_prediction_description": "या हंगामात कोणती पिके लागवड करणे सर्वोत्तम आहे हे भविष्यवाणी करा.",
     "fertilizer_prediction": "खते अंदाज",
     "fertilizer_prediction_description": "तुमच्या पिकांसाठी आदर्श खत ठरवा.",
+    "community": "समुदाय",
+    "community_description": "जोडा, सामायिक करा, चर्चा करा, सहकार्य करा, वाढा.",
+    "education": "शिक्षण",
+    "education_description": "शिका, अन्वेषण करा, सामायिक करा, नवकल्पना करा, सहकार्य करा, यशस्वी व्हा.",
     "navList": {
       "home": "मुखपृष्ठ",
       "contact_us": "संपर्क साधा"

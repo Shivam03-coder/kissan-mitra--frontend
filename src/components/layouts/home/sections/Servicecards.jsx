@@ -8,7 +8,7 @@ function Servicecards() {
 
   return (
     <section className="py-8">
-      <Typography variant="h3" className="text-center">
+      <Typography variant="h3" className="text-center w-[90%] mx-auto">
         {t("Home.servicecards.title")}
       </Typography>
       <div className="flex flex-wrap justify-center gap-6 py-8">

@@ -1,19 +1,18 @@
 import React from "react";
+import SpeedDialSection from "./sections/SpeedDialSection";
+import MessageShowcaseSection from "./sections/MessageShowcaseSection";
+import { MessageDialog } from "./sections/MessageModelSection";
 
 const CommunityContainer = () => {
   return (
-    <div className="size-full">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officiis
-      tenetur reiciendis, non, commodi optio natus culpa vel iste illum velit.
-      Eveniet quibusdam rem quam soluta repellat mollitia earum ad, recusandae
-      sint? Quibusdam a libero optio sit sapiente! Harum veniam doloribus,
-      officiis recusandae dolorum at, voluptatem aliquid voluptate voluptates,
-      blanditiis ratione enim? Perspiciatis porro ab architecto provident et,
-      excepturi, dolorem nulla at, aperiam officia nemo repellendus laborum
-      animi voluptates explicabo omnis iusto? Odit ea quasi non corporis ipsa
-      quisquam laudantium voluptas earum incidunt, aspernatur animi harum
-      voluptatum itaque repudiandae nulla illo. Deserunt impedit similique
-      aspernatur odio error ea placeat eligendi?
+    <div className=" min-h-screen bg-custom-green-gradient">
+      <section className="size-full flex-center">
+        <MessageShowcaseSection />
+      <MessageDialog />
+      </section>
+      <div className="fixed">
+        <SpeedDialSection />
+      </div>
     </div>
   );
 };

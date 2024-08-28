@@ -57,6 +57,10 @@
     "crop_prediction_description": "Forecast which crops are best to plant this season.",
     "fertilizer_prediction": "Fertilizer Prediction",
     "fertilizer_prediction_description": "Determine the optimal fertilizer for your crops.",
+    "community": "Community",
+    "community_description": "Connect, share, discuss, collaborate, grow.",
+    "education": "Education",
+    "education_description": "Learn, explore, share, innovate, collaborate, succeed.",
     "navList": {
       "home": "HOME",
       "contact_us": "CONTACT-US"

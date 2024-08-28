@@ -14,6 +14,7 @@ function Contentsection() {
           {t('Home.contentSection.kissanMitra')}
         </span>
       </Typography>
+      <br />
       <Typography variant="h5" className="opacity-60">
         {t('Home.contentSection.empoweringFarmers')}
       </Typography>
@@ -22,12 +23,12 @@ function Contentsection() {
       </Button>
       <div className="flex items-center gap-5">
         <AvatarStack />
-        <Typography className="flex items-center gap-3">
+        <div className="flex items-center gap-3">
           <Staricon className="size-8 text-goldentainoi-500" />
           <Typography variant="h6" className="opacity-60 hidden md:block">
             {t('Home.contentSection.empoweringFarmersWithInsights')}
           </Typography>
-        </Typography>
+        </div>
       </div>
     </section>
   );

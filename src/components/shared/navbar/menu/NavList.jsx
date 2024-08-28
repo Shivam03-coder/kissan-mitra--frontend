@@ -8,7 +8,7 @@ function NavList() {
   const { t } = useTranslation(); // Initialize the hook
 
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row space-y-5 md:space-y-0 lg:p-1">
       <Typography className="text-lg font-Inter font-medium">
         <Link to="/">
           <ListItem className="flex items-center gap-2 py-2 pr-4">

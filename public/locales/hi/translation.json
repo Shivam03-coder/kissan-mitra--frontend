@@ -57,6 +57,10 @@
     "crop_prediction_description": "इस मौसम में किस फसल को लगाना सबसे अच्छा है, इसका पूर्वानुमान लगाएं।",
     "fertilizer_prediction": "उर्वरक की भविष्यवाणी",
     "fertilizer_prediction_description": "अपनी फसलों के लिए आदर्श उर्वरक का निर्धारण करें।",
+    "community": "समुदाय",
+    "community_description": "जुड़ें, साझा करें, चर्चा करें, सहयोग करें, बढ़ें।",
+    "education": "शिक्षा",
+    "education_description": "सीखें, अन्वेषण करें, साझा करें, नवाचार करें, सहयोग करें, सफल हों।",
     "navList": {
       "home": "होम",
       "contact_us": "संपर्क करें"

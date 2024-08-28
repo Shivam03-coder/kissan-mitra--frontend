@@ -7,8 +7,8 @@ const initialState = {
   Registerd_User_info: localStorage.getItem("userInfo")
     ? JSON.parse(localStorage.getItem("userInfo"))
     : null,
-  isUserAuthenticated: Cookie.get("isUserAuthentucated")
-    ? Cookie.get("isUserAuthentucated")
+  isUserAuthenticated: Cookie.get("isUserAuthenticated")
+    ? Cookie.get("isUserAuthenticated")
     : null,
 };
 
@@ -25,7 +25,7 @@ export const userAuth = createSlice({
 
     setIsUserAuthenticated: (state, action) => {
       state.isUserAuthenticated = action.payload;
-      Cookie.set("isUserAuthentucated", action.payload);
+      Cookie.set("isUserAuthenticated", action.payload);
     },
 
     clearIsUserAuthenticated: (state, action) => {

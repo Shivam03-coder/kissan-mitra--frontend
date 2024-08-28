@@ -2,10 +2,10 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import io from "socket.io-client";
 import { setSocket } from "../../../redux/states/socketSlice";
+import { SetCommunityMessagedata } from "../../../redux/states/communitySlice";
 
 const SocketContext = ({ children }) => {
   const { Registerd_User_info } = useSelector((state) => state.userauthstate);
-  const [messages, setMessages] = useState([]);
   const dispatch = useDispatch();
 
   const UserId = useMemo(
@@ -14,8 +14,10 @@ const SocketContext = ({ children }) => {
   );
 
   useEffect(() => {
+    let socket;
+
     if (UserId) {
-      const socket = io("http://localhost:5130/", {
+      socket = io("http://localhost:5130/", {
         withCredentials: true,
         query: {
           UserId: UserId,
@@ -28,19 +30,19 @@ const SocketContext = ({ children }) => {
       });
 
       socket.on("receiveMessage", (newMessage) => {
-        setMessages((prevMessages) => [...prevMessages, newMessage]);
+        dispatch(SetCommunityMessagedata(newMessage));
       });
-
       dispatch(setSocket(socket));
     }
 
-    // Cleanup function for socket disconnection
     return () => {
-      socket.off("receiveMessage", handleReceiveMessages);
-      socket.disconnect();
-      console.log("Connection Lost");
+      if (socket) {
+        socket.off("receiveMessage");
+        socket.disconnect();
+        console.log("Connection Lost");
+      }
     };
-  });
+  }, [UserId, dispatch]);
 
   return <>{children}</>;
 };

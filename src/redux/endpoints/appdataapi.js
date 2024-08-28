@@ -39,6 +39,14 @@ const Appdataendpoints = Apiservices.injectEndpoints({
         credentials: "include",
       }),
     }),
+    getallMessages: build.query({
+      query: () => ({
+        url: `/community/messages`,
+        method: "GET",
+        headers,
+      }),
+      transformResponse: (response) => response?.data,
+    }),
   }),
 });
 
@@ -47,4 +55,5 @@ export const {
   useGetStateDataQuery,
   useGetLocalMarketNameMutation,
   useGetMarketDataMutation,
+  useGetallMessagesQuery,
 } = Appdataendpoints;
