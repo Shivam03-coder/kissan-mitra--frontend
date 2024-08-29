@@ -14,7 +14,7 @@ export function MessageShowcaseSection() {
   }, [communityMessage]);
   return (
     <section>
-      <div className=" w-[28rem] md:w-[32rem] py-10">
+      <div className=" w-[24rem] md:w-[32rem] py-10">
         <Rendermessage communityMessage={communityMessage} />
       </div>
       <div ref={scrollScreenRef} />
