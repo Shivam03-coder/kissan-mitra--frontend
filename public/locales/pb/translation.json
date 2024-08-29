@@ -1,0 +1,154 @@
+{
+    "Home": {
+      "contentSection": {
+        "weAreThe": "ਅਸੀਂ ਹਾਂ",
+        "kissanMitra": "ਕਿਸਾਨ ਮਿੱਤਰ",
+        "empoweringFarmers": "ਕਿਸਾਨਾਂ ਨੂੰ ਖੁਦਮੁਖਤਿਆਰ ਬਣਾ ਕੇ, ਇਕੱਠੇ ਤਰੱਕੀ ਕਰਦੇ ਹੋਏ",
+        "moreInfo": "ਹੋਰ ਜਾਣਕਾਰੀ",
+        "empoweringFarmersWithInsights": "ਅਸਲ ਸਮੇਂ ਦੀ ਜਾਣਕਾਰੀ ਅਤੇ ਕਮਿਊਨਿਟੀ ਸਹਾਇਤਾ ਨਾਲ ਕਿਸਾਨਾਂ ਨੂੰ ਸਸ਼ਕਤ ਕਰਨਾ"
+      },
+      "serviceContent": {
+        "title": "ਕਿਸਾਨ ਮਿੱਤਰ 'ਤੇ, ਅਸੀਂ ਕਿਸਾਨਾਂ ਦੀ ਰੋਜ਼ਾਨਾ ਦੀਆਂ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨ ਲਈ ਅੱਗੇ ਦੀ ਤਕਨਾਲੋਜੀ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।",
+        "subtitle": "ਕਿਸਾਨ ਮਿੱਤਰ 'ਤੇ, ਅਸੀਂ ਕਿਸਾਨਾਂ ਨੂੰ ਨਵੀਂ ਤਕਨਾਲੋਜੀ ਨਾਲ ਸੰਬੰਧਤ ਕਰਨ ਲਈ ਵਚਨਬੱਧ ਹਾਂ, ਜੋ ਉਤਪਾਦਕਤਾ ਵਧਾਉਣ ਲਈ ਡਿਜ਼ਾਈਨ ਕੀਤੀ ਗਈ ਹੈ।",
+        "checkout": "ਚੈਕਆਉਟ"
+      },
+      "servicecards": {
+        "title": "ਤੁਹਾਡੇ ਖੇਤੀ ਦੇ ਅਨੁਭਵ ਨੂੰ ਵਧਾਉਣ ਲਈ ਵਿਆਪਕ ਸੇਵਾਵਾਂ",
+        "weatherupdates": "ਮੌਸਮ ਅੱਪਡੇਟ",
+        "markettrends": "ਬਜ਼ਾਰ ਦੀਆਂ ਰੁਝਾਨਾਂ",
+        "checkplantdisease": "ਪੌਧੇ ਦੀ ਬਿਮਾਰੀ ਦੀ ਜਾਂਚ ਕਰੋ",
+        "findbestfertilizer": "ਉੱਚਾ ਖਾਦ ਲੱਭੋ",
+        "calculateyield": "ਉਤਪਾਦਨ ਦੀ ਗਿਣਤੀ ਕਰੋ"
+      },
+      "propcards": {
+        "title": "ਸਮਾਰਟ ਹੱਲਾਂ ਨਾਲ ਕਿਸਾਨਾਂ ਨੂੰ ਸਸ਼ਕਤ ਕਰਨਾ - ਕਿਸਾਨ ਮਿੱਤਰ",
+        "eco": "ਪਰਿਆਵਰਣ ਸਬੰਧੀ",
+        "fresh": "ਤਾਜ਼ਾ",
+        "safe": "ਸੁਰੱਖਿਅਤ",
+        "easy": "ਅਸਾਨ"
+      },
+      "footer": {
+        "product": "ਉਤਪਾਦ",
+        "overview": "ਸੰਖੇਪ ਵੇਖੋ",
+        "features": "ਖ਼ੂਬੀਆਂ",
+        "company": "ਕੰਪਨੀ",
+        "aboutUs": "ਸਾਡੇ ਬਾਰੇ",
+        "careers": "ਕਿਰਪਾ",
+        "resource": "ਸੰਸਾਧਨ",
+        "blog": "ਬਲੌਗ",
+        "newsletter": "ਨਿਊਜ਼ਲੇਟਰ",
+        "contactsection": {
+          "placeholder": "ਸੰਸਥਾ ਨੂੰ ਸੁਨੇਹਾ ਭੇਜੋ",
+          "sendButton": "ਭੇਜੋ"
+        }
+      }
+    },
+    "Navbar": {
+      "title": "ਸੇਵਾਵਾਂ",
+      "weather": "ਮੌਸਮ",
+      "weather_description": "ਆਪਣੇ ਸਥਾਨ ਲਈ ਸਹੀ ਮੌਸਮ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰੋ।",
+      "crop_yield_prediction": "ਫਸਲ ਉਤਪਾਦਨ ਦੀ ਅਗਾਹੀ",
+      "crop_yield_prediction_description": "ਅਡਵਾਂਸਡ ਐਨਾਲਿਟਿਕਸ ਨਾਲ ਆਪਣੀ ਫਸਲਾਂ ਦੀ ਉਤਪਾਦਨ ਦੀ ਅਗਾਹੀ ਕਰੋ।",
+      "plant_disease_prediction": "ਪੌਧੇ ਦੀ ਬਿਮਾਰੀ ਦੀ ਅਗਾਹੀ",
+      "plant_disease_prediction_description": "ਪੌਧੇ ਦੀਆਂ ਬਿਮਾਰੀਆਂ ਦੀ ਪਛਾਣ ਅਤੇ ਅਗਾਹੀ ਕਰੋ।",
+      "market_price": "ਬਜ਼ਾਰ ਕੀਮਤ",
+      "market_price_description": "ਆਪਣੀਆਂ ਫਸਲਾਂ ਅਤੇ ਉਤਪਾਦਾਂ ਲਈ ਨਵੀਂ ਬਜ਼ਾਰ ਕੀਮਤ ਪ੍ਰਾਪਤ ਕਰੋ।",
+      "crop_prediction": "ਫਸਲ ਦੀ ਅਗਾਹੀ",
+      "crop_prediction_description": "ਇਸ ਸੀਜ਼ਨ ਵਿੱਚ ਕਿਹੜੀ ਫਸਲ ਲਗਾਉਣੀ ਚੰਗੀ ਹੈ, ਇਸਦੀ ਅਗਾਹੀ ਕਰੋ।",
+      "fertilizer_prediction": "ਖਾਦ ਦੀ ਅਗਾਹੀ",
+      "fertilizer_prediction_description": "ਆਪਣੀਆਂ ਫਸਲਾਂ ਲਈ ਵਧੀਆ ਖਾਦ ਦਾ ਨਿਰਧਾਰਣ ਕਰੋ।",
+      "community": "ਕਮਿਊਨਿਟੀ",
+      "community_description": "ਜੁੜੋ, ਸਾਂਝਾ ਕਰੋ, ਚਰਚਾ ਕਰੋ, ਸਹਿਯੋਗ ਕਰੋ, ਤਰੱਕੀ ਕਰੋ।",
+      "education": "ਸਿੱਖਿਆ",
+      "education_description": "ਸਿੱਖੋ, ਪੜ੍ਹਾਈ ਕਰੋ, ਸਾਂਝਾ ਕਰੋ, ਨਵੀਨਤਾ ਲਿਆਓ, ਸਹਿਯੋਗ ਕਰੋ, ਕਾਮਯਾਬੀ ਹਾਸਲ ਕਰੋ।",
+      "navList": {
+        "home": "ਹੋਮ",
+        "contact_us": "ਸੰਪਰਕ ਕਰੋ"
+      }
+    },
+    "Weather": {
+      "currentWeather": {
+        "title": "ਮੌਜੂਦਾ ਮੌਸਮ"
+      },
+      "todayForecast": {
+        "title": "ਅੱਜ ਦਾ ਤਾਪਮਾਨ"
+      },
+      "airCondition": {
+        "title": "ਹਵਾ ਦੀ ਹਾਲਤ"
+      },
+      "weeklyForecast": {
+        "title": "ਸੱਪਤਾਹਿਕ ਅਗਾਹੀ"
+      }
+    },
+    "crop-yeild": {
+      "title": "ਉਤਪਾਦਨ ਅਗਾਹੀ ਫਾਰਮ",
+      "temperature": "ਤਾਪਮਾਨ",
+      "rain": "ਵਰਖਾ",
+      "state": "ਰਾਜ",
+      "crop-type": "ਫਸਲ ਦੀ ਕਿਸਮ",
+      "crop": "ਫਸਲ",
+      "nitrogen": "ਨਾਈਟ੍ਰੋਜਨ",
+      "potassium": "ਪੋਟਾਸੀਅਮ",
+      "phosphorous": "ਫਾਸਫੋਰਸ",
+      "ph-level": "ਪੀਐਚ ਸਤਰ",
+      "area": "ਖੇਤਰ",
+      "button": "ਅਗਾਹੀ ਕਰੋ"
+    },
+    "fertilizer-prediction": {
+      "title": "ਖਾਦ ਅਗਾਹੀ ਫਾਰਮ",
+      "city": "ਸ਼ਹਿਰ",
+      "moisture": "ਨਮੀ",
+      "soil-type": "ਮਿੱਟੀ ਦੀ ਕਿਸਮ",
+      "crop": "ਫਸਲ",
+      "nitrogen": "ਨਾਈਟ੍ਰੋਜਨ",
+      "potassium": "ਪੋਟਾਸੀਅਮ",
+      "phosphorous": "ਫਾਸਫੋਰਸ",
+      "button": "ਅਗਾਹੀ ਕਰੋ"
+    },
+    "crop-prediction": {
+      "title": "ਫਸਲ ਅਗਾਹੀ ਫਾਰਮ",
+      "nitrogen": "ਨਾਈਟ੍ਰੋਜਨ",
+      "phosphorous": "ਫਾਸਫੋਰਸ",
+      "potassium": "ਪੋਟਾਸੀਅਮ",
+      "ph-level": "ਪੀਐਚ ਸਤਰ",
+      "rain": "ਵਰਖਾ",
+      "city": "ਤੁਹਾਡਾ ਸ਼ਹਿਰ",
+      "button": "ਅਗਾਹੀ ਕਰੋ"
+    },
+    "disease-prediction": {
+      "title": "ਬਿਮਾਰੀ ਦੀ ਅਗਾਹੀ ਫਾਰਮ",
+      "label": "ਚਿੱਤਰ ਅਪਲੋਡ ਕਰੋ",
+      "button": "ਅਗਾਹੀ ਕਰੋ"
+    },
+    "market-price": {
+      "text-section": {
+        "heading": "ਐਮਐਸਪੀ ਜਾਣਕਾਰੀ ਲਈ ਆਸਾਨ ਪਹੁੰਚ",
+        "paragraph": "ਸਾਡਾ ਪਲੇਟਫਾਰਮ ਉਪਭੋਗਤਾਵਾਂ ਨੂੰ ਸਥਾਨਕ ਖੇਤਰ ਵਿੱਚ ਵੱਖ ਵੱਖ ਖੇਤੀ ਉਤਪਾਦਾਂ ਦੇ ਘੱਟੋ ਘੱਟ ਸਮਰਥਨ ਕੀਮਤ (ਐਮਐਸਪੀ) ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਲੱਭਣ ਦੀ ਸਮਰਥਾ ਦਿੰਦਾ ਹੈ।"
+      }
+    },
+    "Appinfo": {
+      "fertilizerInfo": {
+        "nitrogen": {
+          "label": "ਨਾਈਟ੍ਰੋਜਨ",
+          "content": "ਨਾਈਟ੍ਰੋਜਨ ਪੌਧਿਆਂ ਦੀ ਵਾਧੂ ਦੇ ਲਈ ਜ਼ਰੂਰੀ ਹੈ ਕਿਉਂਕਿ ਇਹ ਕਲੋਰੋਫਿਲ ਅਤੇ ਐਮੀਨੋ ਐਸਿਡ ਦਾ ਇੱਕ ਮੁੱਖ ਹਿੱਸਾ ਹੈ।"
+        },
+        "rainfall": {
+          "label": "ਵਰਖਾ",
+          "content": "ਵਰਖਾ ਪੌਧਿਆਂ ਦੀ ਵਾਧੂ ਲਈ ਜ਼ਰੂਰੀ ਪਾਣੀ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ, ਜੋ ਮਿੱਟੀ ਦੀ ਨਮੀ ਅਤੇ ਪੋਸ਼ਕ ਤੱਤਾਂ ਦੀ ਉਪਲਬਧਤਾ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+        },
+        "phosphorous": {
+          "label": "ਫਾਸਫੋਰਸ",
+          "content": "ਫਾਸਫੋਰਸ ਪੌਧਿਆਂ ਵਿੱਚ ਜੜ੍ਹਾਂ, ਫੁੱਲਾਂ, ਬੀਜਾਂ ਅਤੇ ਫਲਾਂ ਦੇ ਵਿਕਾਸ ਦਾ ਸਹਾਰਾ ਦਿੰਦਾ ਹੈ।"
+        },
+        "potassium": {
+          "label": "ਪੋਟਾਸੀਅਮ",
+          "content": "ਪੋਟਾਸੀਅਮ ਪੌਧਿਆਂ ਦੇ ਸਮਾਨ ਸਿਹਤ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਬਿਮਾਰੀ ਪ੍ਰਤੀਰੋਧਕ ਅਤੇ ਪਾਣੀ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਨੂੰ ਸੁਧਾਰਦਾ ਹੈ।"
+        },
+        "phLevel": {
+          "label": "pH ਸਤਰ",
+          "content": "pH ਮਿੱਟੀ ਦੀ ਅਮਲੀਅਤ ਜਾਂ ਖਾਰਪਣ ਨੂੰ ਮਾਪਦਾ ਹੈ, ਜੋ ਪੋਸ਼ਕ ਤੱਤਾਂ ਦੀ ਉਪਲਬਧਤਾ ਅਤੇ ਪੌਧਿਆਂ ਦੇ ਵਿਕਾਸ ਲਈ ਮਹੱਤਵਪੂਰਨ ਹੈ।"
+        }
+      }
+    }
+  }
+  

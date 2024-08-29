@@ -1,0 +1,154 @@
+{
+    "Home": {
+      "contentSection": {
+        "weAreThe": "અમે છીએ",
+        "kissanMitra": "કિસાન મિત્ર",
+        "empoweringFarmers": "ખેડૂતોને સશક્ત બનાવવું",
+        "moreInfo": "વધુ માહિતી",
+        "empoweringFarmersWithInsights": "વાસ્તવિક સમયની જાણકારી અને સમુદાયની સહાય સાથે ખેડૂતોને સશક્ત બનાવવું"
+      },
+      "serviceContent": {
+        "title": "કિસાન મિત્રમાં, અમે ખેડૂતોને તેમના દૈનિક કામમાં સહાય માટે અદ્યતન ટેકનોલોજી પ્રદાન કરીએ છીએ.",
+        "subtitle": "કિસાન મિત્રમાં, અમે ખેડૂતોને ઉત્પાદકતામાં વધારો કરવા માટે ડિઝાઇન કરેલી નવીનતમ ટેકનોલોજીથી સજ્જ કરવા માટે પ્રતિબદ્ધ છીએ.",
+        "checkout": "ચેકઆઉટ"
+      },
+      "servicecards": {
+        "title": "તમારા ખેતીના અનુભવને સુધારવા માટે વ્યાપક સેવાઓ",
+        "weatherupdates": "હવામાન સુધારા",
+        "markettrends": "બજારની પ્રવૃત્તિઓ",
+        "checkplantdisease": "વિભાગની બીમારીઓ તપાસો",
+        "findbestfertilizer": "સારો ખાતર શોધો",
+        "calculateyield": "ઉપજની ગણતરી કરો"
+      },
+      "propcards": {
+        "title": "સ્માર્ટ સોલ્યુશન્સ સાથે ખેડૂતોને સશક્ત બનાવવું - કિસાન મિત્ર",
+        "eco": "પર્યાવરણ-મૈત્રીપૂર્ણ",
+        "fresh": "તાજું",
+        "safe": "સુરક્ષિત",
+        "easy": "આसान"
+      },
+      "footer": {
+        "product": "ઉત્પાદન",
+        "overview": "ઝાંખી",
+        "features": "લક્ષણો",
+        "company": "કંપની",
+        "aboutUs": "અમારા વિશે",
+        "careers": "કેરિયર",
+        "resource": "સાધન",
+        "blog": "બ્લોગ",
+        "newsletter": "ન્યૂઝલેટર",
+        "contactsection": {
+          "placeholder": "સંસ્થા માટે સંદેશ મોકલો",
+          "sendButton": "મોકલો"
+        }
+      }
+    },
+    "Navbar": {
+      "title": "સેવાઓ",
+      "weather": "હવામાન",
+      "weather_description": "તમારા સ્થાન માટે સચોટ હવામાન સુધારા મેળવો.",
+      "crop_yield_prediction": "ફસલ ઉપજની આગાહી",
+      "crop_yield_prediction_description": "અદ્યતન વિશ્લેષણ સાથે તમારી ફસલની ઉપજની આગાહી કરો.",
+      "plant_disease_prediction": "વિભાગની બીમારીઓની આગાહી",
+      "plant_disease_prediction_description": "વિભાગની બીમારીઓની ઓળખ અને આગાહી કરો.",
+      "market_price": "બજાર ભાવ",
+      "market_price_description": "તમારા ફસલ અને ઉત્પાદનો માટે તાજેતરના બજાર ભાવ મેળવો.",
+      "crop_prediction": "ફસલ આગાહી",
+      "crop_prediction_description": "આ સીઝનમાં કઈ ફસલ સૌથી વધુ લગાવવી તે આગાહી કરો.",
+      "fertilizer_prediction": "ખાતર આગાહી",
+      "fertilizer_prediction_description": "તમારા ફસલ માટે શ્રેષ્ઠ ખાતરનો નિર્ધારણ કરો.",
+      "community": "સમુદાય",
+      "community_description": "જોડાવો, શેર કરો, ચર્ચા કરો, સહકાર કરો, વિકાસ કરો.",
+      "education": "શિક્ષણ",
+      "education_description": "શીખો, શોધો, શેર કરો, નવાચારી કરો, સહકાર કરો, સફળતા મેળવો.",
+      "navList": {
+        "home": "મુખ્ય પૃષ્ઠ",
+        "contact_us": "અમારો સંપર્ક કરો"
+      }
+    },
+    "Weather": {
+      "currentWeather": {
+        "title": "વર્તમાન હવામાન"
+      },
+      "todayForecast": {
+        "title": "આજનું તાપમાન"
+      },
+      "airCondition": {
+        "title": "હવાના હાલત"
+      },
+      "weeklyForecast": {
+        "title": "અઠવાડિયું પૂર્વાનુમાન"
+      }
+    },
+    "crop-yeild": {
+      "title": "ઉપજ આગાહી ફોર્મ",
+      "temperature": "તાપમાન",
+      "rain": "વરસાદ",
+      "state": "રાજ્ય",
+      "crop-type": "ફસલનો પ્રકાર",
+      "crop": "ફસલ",
+      "nitrogen": "નાઇટ્રોજન",
+      "potassium": "પોટેશિયમ",
+      "phosphorous": "ફોસ્ફરસ",
+      "ph-level": "પી.એચ. સ્તર",
+      "area": "પ્રદેશ",
+      "button": "આગાહી કરો"
+    },
+    "fertilizer-prediction": {
+      "title": "ખાતર આગાહી ફોર્મ",
+      "city": "શહેર",
+      "moisture": "ભેજ",
+      "soil-type": "માટીનો પ્રકાર",
+      "crop": "ફસલ",
+      "nitrogen": "નાઇટ્રોજન",
+      "potassium": "પોટેશિયમ",
+      "phosphorous": "ફોસ્ફરસ",
+      "button": "આગાહી કરો"
+    },
+    "crop-prediction": {
+      "title": "ફસલ આગાહી ફોર્મ",
+      "nitrogen": "નાઇટ્રોજન",
+      "phosphorous": "ફોસ્ફરસ",
+      "potassium": "પોટેશિયમ",
+      "ph-level": "પી.એચ. સ્તર",
+      "rain": "વરસાદ",
+      "city": "તમારા શહેર",
+      "button": "આગાહી કરો"
+    },
+    "disease-prediction": {
+      "title": "રોગ આગાહી ફોર્મ",
+      "label": "છબી અપલોડ કરો",
+      "button": "આગાહી કરો"
+    },
+    "market-price": {
+      "text-section": {
+        "heading": "MSP માહિતી સુધી સરળતા સાથે પહોંચો",
+        "paragraph": "અમારું પ્લેટફોર્મ વપરાશકર્તાઓને તેમની સ્થાનિક વિસ્તારોમાં વિવિધ કૃષિ ઉત્પાદનોના ન્યૂનતમ ટેકાવળ કીમત (MSP) સરળતાથી શોધવા માટે સક્ષમ બનાવે છે."
+      }
+    },
+    "Appinfo": {
+      "fertilizerInfo": {
+        "nitrogen": {
+          "label": "નાઇટ્રોજન",
+          "content": "નાઇટ્રોજન છોડની વૃદ્ધિ માટે મહત્વપૂર્ણ છે કારણ કે તે ક્લોરોફિલ અને એમિનો એસિડનો મુખ્ય ઘટક છે."
+        },
+        "rainfall": {
+          "label": "વરસાદ",
+          "content": "વરસાદ છોડની વૃદ્ધિ માટે જરૂરી પાણી પૂરો પાડે છે, જે જમીનમાં ભેજ અને પોષક તત્વોની ઉપલબ્ધતાને અસર કરે છે."
+        },
+        "phosphorous": {
+          "label": "ફોસ્ફરસ",
+          "content": "ફોસ્ફરસ છોડના મૂળ, ફૂલ, બીજ, અને ફળોના વિકાસને આધાર આપે છે."
+        },
+        "potassium": {
+          "label": "પોટેશિયમ",
+          "content": "પોટેશિયમ છોડના સમાન આરોગ્યમાં મદદ કરે છે, રોગ પ્રતિરોધક અને પાણીની કાર્યક્ષમતા સુધારે છે."
+        },
+        "phLevel": {
+          "label": "pH સ્તર",
+          "content": "pH જમીનની અમ્લતા અથવા ક્ષારીયતાને માપે છે, જે પોષક તત્વોની ઉપલબ્ધતા અને છોડની વૃદ્ધિ માટે મહત્વપૂર્ણ છે."
+        }
+      }
+    }
+  }
+  

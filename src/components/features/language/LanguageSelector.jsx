@@ -9,7 +9,7 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className=" w-[50%] md:w-full mx-3">
+    <div className="w-[50%] md:w-full mx-3">
       <select
         id="language"
         className="block w-full p-2 rounded-xl bg-green-200 text-gray-700 focus:outline-none focus:ring-2 focus:ring-black focus:border-green-500 sm:text-lg"
@@ -24,6 +24,12 @@ const LanguageSelector = () => {
         </option>
         <option className="bg-green-300 text-gray-900" value="mr">
           मराठी
+        </option>
+        <option className="bg-green-300 text-gray-900" value="gj">
+          ગુજરાતી
+        </option>
+        <option className="bg-green-300 text-gray-900" value="pb">
+          ਪੰਜਾਬੀ
         </option>
       </select>
     </div>
