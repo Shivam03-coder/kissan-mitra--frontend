@@ -47,6 +47,14 @@ const Authendpoints = Apiservices.injectEndpoints({
         headers,
       }),
     }),
+    uploadProfileImage: build.mutation({
+      query: (file) => ({
+        url: "/auth/upload-profile-photo",
+        method: "POST",
+        body: file,
+        credentials: "include",
+      }),
+    }),
   }),
 });
 
@@ -55,5 +63,5 @@ export const {
   useLoginUserMutation,
   usePasswordChangeMutation,
   useLogoutUserMutation,
-  useSignoutUserMutation,
+  useSignoutUserMutation,useUploadProfileImageMutation
 } = Authendpoints;

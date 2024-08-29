@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ProfileContainer from "../layouts/profile/ProfileContainer";
 
 const Userprofilepage = () => {
   return (
-    <div>
-      
+    <div className="min-h-screen">
+      <ProfileContainer />
     </div>
-  )
-}
+  );
+};
 
-export default Userprofilepage
+export default Userprofilepage;
