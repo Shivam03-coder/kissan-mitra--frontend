@@ -15,7 +15,7 @@ function Contentsection() {
         </span>
       </Typography>
       <br />
-      <Typography variant="h5" className="opacity-60">
+      <Typography variant="h5" className="opacity-60 hidden md:block">
         {t('Home.contentSection.empoweringFarmers')}
       </Typography>
       <Button className="bg-pastelGreen-500 text-sm text-black rounded-3xl">

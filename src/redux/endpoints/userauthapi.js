@@ -63,10 +63,6 @@ export const {
   useLoginUserMutation,
   usePasswordChangeMutation,
   useLogoutUserMutation,
-<<<<<<< HEAD
-  useSignoutUserMutation,useUploadProfileImageMutation
-} = Authendpoints;
-=======
   useSignoutUserMutation,
+  useUploadProfileImageMutation,
 } = Authendpoints;
->>>>>>> origin/main

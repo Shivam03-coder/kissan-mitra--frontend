@@ -60,6 +60,10 @@ import { CgTrees } from "react-icons/cg";
 import { CgCommunity } from "react-icons/cg";
 import { MdCastForEducation } from "react-icons/md";
 
+import { CiHome } from "react-icons/ci";
+import { RxAvatar } from "react-icons/rx";
+import { MdOutlineContactless } from "react-icons/md";
+
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
 export const Rightarrowicon = FaArrowRightLong;
@@ -81,3 +85,6 @@ export const GrainsIcon = PiGrains;
 export const CgTreesIcons = CgTrees;
 export const CommunityIcons = CgCommunity;
 export const EducationIcon = MdCastForEducation;
+export const HomeIcon = CiHome;
+export const ContactIcon = MdOutlineContactless;
+export const ProfileIcon = RxAvatar;

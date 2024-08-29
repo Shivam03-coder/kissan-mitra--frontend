@@ -12,9 +12,11 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+import { useMediaquery } from "../../../hooks/usemediaQuery";
 function UserProfile() {
   const [Image, setImage] = useState(null);
   const { UserAvatar } = useSelector((state) => state.userauthstate);
+  const isMobileView = useMediaquery(900); 
   useEffect(() => {
     if (UserAvatar) {
       setImage(UserAvatar);
@@ -24,7 +26,7 @@ function UserProfile() {
     <Menu>
       <MenuHandler>
         {UserAvatar ? (
-          <Avatar className="cursor-pointer border border-black " src={Image} alt="avatar" />
+          <Avatar  className="cursor-pointer border border-black " size={isMobileView && "xl"} src={Image} alt="avatar" />
         ) : (
           <div
             className={`size-12 border-2 bg-green-500 border-black rounded-full font-Varela uppercase text-black text-3xl flex-center cursor-pointer`}

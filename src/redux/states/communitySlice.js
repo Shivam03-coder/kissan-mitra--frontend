@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
+  MobileviewNavbar: false,
   messagemodel: false,
   communityMessage: [],
 };
@@ -10,6 +11,9 @@ export const communitySlice = createSlice({
   reducers: {
     OpenMessageModel: (state) => {
       state.messagemodel = !state.messagemodel;
+    },
+    OpenMobileviewNavbar: (state) => {
+      state.MobileviewNavbar = !state.MobileviewNavbar;
     },
     SetCommunityMessagedata: (state, action) => {
       state.communityMessage.push(action.payload);
@@ -31,4 +35,5 @@ export const {
   SetCommunityMessagedata,
   ClearCommunityMessagedata,
   addMessageToCommunityData,
+  OpenMobileviewNavbar,
 } = communitySlice.actions;

@@ -63,7 +63,8 @@
     "education_description": "Learn, explore, share, innovate, collaborate, succeed.",
     "navList": {
       "home": "HOME",
-      "contact_us": "CONTACT-US"
+      "contact_us": "CONTACT-US",
+      "profile":"PROFILE"
     }
   },
   "Weather": {

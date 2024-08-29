@@ -112,7 +112,7 @@ const SelectionSection = () => {
   if (error) return <div>Error loading data...</div>;
 
   return (
-    <section className="grid w-[95%] mx-auto md:grid-cols-4 gap-3 place-items-center py-6">
+    <section className="grid w-[95%] mx-auto md:grid-cols-4 gap-7 md:gap-3  place-items-center py-6">
       <div className="w-64">
         {stateOptions.length > 0 && (
           <Select

@@ -62,8 +62,9 @@
       "education": "શિક્ષણ",
       "education_description": "શીખો, શોધો, શેર કરો, નવાચારી કરો, સહકાર કરો, સફળતા મેળવો.",
       "navList": {
-        "home": "મુખ્ય પૃષ્ઠ",
-        "contact_us": "અમારો સંપર્ક કરો"
+        "home": "હોમ",
+        "contact_us": "સંપર્ક કરો",
+        "profile": "પ્રોફાઇલ"
       }
     },
     "Weather": {

@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
-import { BiAbacus } from "react-icons/bi";
+import React, { useCallback, useEffect, useState } from "react";
+import { Navbar, Typography, IconButton } from "@material-tailwind/react";
 import { useMediaquery } from "../../../hooks/usemediaQuery";
 import NavList from "./menu/NavList";
 import UserProfile from "../userprofile/UserProfile";
-import { Menucloseicon, Menuopen } from "../../../constants";
+import { Menuopen } from "../../../constants";
+import { useDispatch } from "react-redux";
+import { OpenMobileviewNavbar } from "../../../redux/states/communitySlice";
+import MobileviewNavbar from "../mobileviewnavbar/MobileviewNavbar";
 
 function Navigationbar() {
   const [openNav, setOpenNav] = useState(false);
-  const IsMobileView = useMediaquery(900);
+  const isMobileView = useMediaquery(900);
+  const dispatch = useDispatch();
+
+  const handleMobileViewNavBar = useCallback(() => {
+    dispatch(OpenMobileviewNavbar());
+  }, [dispatch]);
 
   useEffect(() => {
-    if (IsMobileView) {
-      setOpenNav(true);
-    }
-    setOpenNav(false);
-  }, [IsMobileView]);
+    setOpenNav(isMobileView);
+  }, [isMobileView]);
 
   return (
     <Navbar
@@ -35,7 +33,7 @@ function Navigationbar() {
           <span className="text-4xl text-portgore-600">M</span>ITRA
         </Typography>
         <div className="hidden gap-5 lg:flex">
-          <div className="hidden  px-5 lg:block">
+          <div className="hidden px-5 lg:block">
             <NavList />
           </div>
           <UserProfile />
@@ -44,18 +42,14 @@ function Navigationbar() {
           variant="text"
           color="blue-gray"
           className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
+          onClick={handleMobileViewNavBar}
         >
-          {openNav ? (
-            <Menucloseicon className="size-7 text-black" strokeWidth={2} />
-          ) : (
+          {openNav && (
             <Menuopen className="size-7 text-black" strokeWidth={2} />
           )}
         </IconButton>
       </div>
-      <Collapse open={openNav}>
-        <NavList />
-      </Collapse>
+      {isMobileView && <MobileviewNavbar />}
     </Navbar>
   );
 }

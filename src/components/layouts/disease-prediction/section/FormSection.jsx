@@ -34,7 +34,7 @@ const FormSection = () => {
         </Typography>
         <form
           onSubmit={handleSubmit}
-          className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
+          className="mt-8 mb-2  mx-auto w-80 max-w-screen-lg sm:w-96"
         >
           <div className="mb-1 flex flex-col gap-4">
             <div className=" flex-col flex-center gap-4">

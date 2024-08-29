@@ -63,7 +63,8 @@
     "education_description": "सीखें, अन्वेषण करें, साझा करें, नवाचार करें, सहयोग करें, सफल हों।",
     "navList": {
       "home": "होम",
-      "contact_us": "संपर्क करें"
+      "contact_us": "संपर्क करें",
+      "profile": "प्रोफाइल"
     }
   },
   "Weather": {

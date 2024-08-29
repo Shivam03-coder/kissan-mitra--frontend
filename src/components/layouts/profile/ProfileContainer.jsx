@@ -13,7 +13,7 @@ const ProfileContainer = () => {
   return (
     <div className="min-h-screen pt-9 bg-custom-light-green-to-white">
       <section className=" w-[90%] mx-auto space-y-6">
-        <section className="grid grid-cols-2 place-items-center">
+        <section className="grid md:grid-cols-2 place-items-center">
           <ProfileSection />
           <UserinfoSection user={user} />
         </section>

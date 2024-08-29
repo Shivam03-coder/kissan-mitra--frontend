@@ -5,7 +5,7 @@ const UserinfoSection = ({ user }) => {
   const { Registerd_User_info } = useSelector((state) => state.userauthstate);
 
   return (
-    <div className=" p-6 max-w-md mx-auto">
+    <div className=" p-6 flex justify-center flex-col max-w-md mx-auto">
       <div className="mb-4">
         <label className="block text-black text-sm font-semibold mb-1">
           Name:
