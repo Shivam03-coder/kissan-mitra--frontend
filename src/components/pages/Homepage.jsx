@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 
 function Homepage() {
   const { isUserAuthenticated } = useSelector((state) => state.userauthstate);
+  console.log("🚀 ~ Homepage ~ isUserAuthenticated:", isUserAuthenticated)
   return (
     <div className="relative min-h-screen">
       <Meteorsvg />

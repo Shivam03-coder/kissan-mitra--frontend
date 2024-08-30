@@ -16,6 +16,8 @@ import phosphorous from "../assets/imgs/png/phosphorous.png";
 import raining from "../assets/imgs/png/raining.png";
 import ph from "../assets/imgs/png/ph.png";
 import nitrogen from "../assets/imgs/png/nitrogen.png";
+import askquestionImg from  "../assets/imgs/png/askQuestion.png";
+import consultationImg from  "../assets/imgs/png/consultation.png";
 
 // IMAGES
 
@@ -32,7 +34,8 @@ export const plantdiseaseimg = plantdisease;
 export const weatherimg = weather;
 export const fertilizerimg = fertilizer;
 export const MarketCropsImg = marketcrop;
-
+export const ConsultImage = consultationImg;
+export const askquestionImage = askquestionImg;
 export const PhImg = ph;
 export const NitrogenImg = nitrogen;
 export const RainingImg = raining;
@@ -59,10 +62,13 @@ import { PiGrains } from "react-icons/pi";
 import { CgTrees } from "react-icons/cg";
 import { CgCommunity } from "react-icons/cg";
 import { MdCastForEducation } from "react-icons/md";
-
+import { IoIosCall } from "react-icons/io";
 import { CiHome } from "react-icons/ci";
 import { RxAvatar } from "react-icons/rx";
 import { MdOutlineContactless } from "react-icons/md";
+import { FaRegAddressBook } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+
 
 export const Menucloseicon = IoMdClose;
 export const Menuopen = CiMenuFries;
@@ -88,3 +94,6 @@ export const EducationIcon = MdCastForEducation;
 export const HomeIcon = CiHome;
 export const ContactIcon = MdOutlineContactless;
 export const ProfileIcon = RxAvatar;
+export const CallIcon = IoIosCall
+export const EmailIcon = MdAlternateEmail
+export const AddressIcon = FaRegAddressBook

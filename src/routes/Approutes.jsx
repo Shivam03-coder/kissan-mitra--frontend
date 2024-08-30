@@ -21,6 +21,7 @@ const FertilizerPredictionpage = lazy(() =>
 );
 const Communitypage = lazy(() => import("../components/pages/Communitypage"));
 const Educationalpage = lazy(() => import("../components/pages/Educationalpage"));
+const ContactUspage = lazy(() => import("../components/pages/ContactUspage"));
 
 export const publicRoutes = [
   {
@@ -73,6 +74,10 @@ export const privateRoutes = [
   {
     path: "/kissan-mitra/education/:id",
     element: Educationalpage,
+  },
+  {
+    path: "/kissan-mitra/contact-us/:id",
+    element: ContactUspage,
   },
   {
     path: "/user-profile/:id",

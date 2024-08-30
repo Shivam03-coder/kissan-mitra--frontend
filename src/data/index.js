@@ -25,6 +25,9 @@ import {
   FertlizerIcon,
   CommunityIcons,
   EducationIcon,
+  EmailIcon,
+  CallIcon,
+  AddressIcon,
 } from "../constants";
 
 export const ServicecardData = [
@@ -154,41 +157,38 @@ export const TodaysForecastData = [
   },
 ];
 
-
-
 export const FertilizerPageInfoData = (t) => [
   {
     id: 2,
     img: NitrogenImg,
-    label: t('Appinfo.fertilizerInfo.nitrogen.label'),
-    content: t('Appinfo.fertilizerInfo.nitrogen.content'),
+    label: t("Appinfo.fertilizerInfo.nitrogen.label"),
+    content: t("Appinfo.fertilizerInfo.nitrogen.content"),
   },
   {
     id: 3,
     img: RainingImg,
-    label: t('Appinfo.fertilizerInfo.rainfall.label'),
-    content: t('Appinfo.fertilizerInfo.rainfall.content'),
+    label: t("Appinfo.fertilizerInfo.rainfall.label"),
+    content: t("Appinfo.fertilizerInfo.rainfall.content"),
   },
   {
     id: 4,
     img: PhosphorousImg,
-    label: t('Appinfo.fertilizerInfo.phosphorous.label'),
-    content: t('Appinfo.fertilizerInfo.phosphorous.content'),
+    label: t("Appinfo.fertilizerInfo.phosphorous.label"),
+    content: t("Appinfo.fertilizerInfo.phosphorous.content"),
   },
   {
     id: 5,
     img: PotassiumImg,
-    label: t('Appinfo.fertilizerInfo.potassium.label'),
-    content: t('Appinfo.fertilizerInfo.potassium.content'),
+    label: t("Appinfo.fertilizerInfo.potassium.label"),
+    content: t("Appinfo.fertilizerInfo.potassium.content"),
   },
   {
     id: 1,
     img: PhImg,
-    label: t('Appinfo.fertilizerInfo.phLevel.label'),
-    content: t('Appinfo.fertilizerInfo.phLevel.content'),
+    label: t("Appinfo.fertilizerInfo.phLevel.label"),
+    content: t("Appinfo.fertilizerInfo.phLevel.content"),
   },
 ];
-
 
 export const navListMenuItems = [
   {
@@ -241,3 +241,47 @@ export const navListMenuItems = [
   },
 ];
 
+export const KeyfeaturesData = [
+  {
+    id: 2,
+    feature: " info@kissanmitr.com",
+    icon: EmailIcon,
+  },
+  {
+    id: 3,
+    feature: " 1-800-227-1031",
+    icon: CallIcon,
+  },
+  {
+    id: 4,
+    feature: "1816 Bimini Drive, Delhi, FL 32806",
+    icon: AddressIcon,
+  },
+];
+
+export const Accord_Data = [
+  {
+    id: 1,
+    question: "What is Kisaan Mitra App?",
+    answer:
+      "The Kisaan Mitra App is a digital platform designed to support farmers by providing them with essential resources, information, and services to improve agricultural productivity and sustainability.",
+  },
+  {
+    id: 2,
+    question: "Why do we need the Kisaan Mitra App?",
+    answer:
+      "The Kisaan Mitra App is crucial for empowering farmers with knowledge, connecting them with experts, and providing timely information on weather, market prices, and best farming practices.",
+  },
+  {
+    id: 3,
+    question: "What is the purpose of the Kisaan Mitra App?",
+    answer:
+      "The primary purpose of the Kisaan Mitra App is to enhance the livelihood of farmers by providing a comprehensive platform for accessing resources, expert advice, and real-time updates.",
+  },
+  {
+    id: 4,
+    question: "How is Kisaan Mitra App different from other agricultural apps?",
+    answer:
+      "It offers features such as cloud-based document submission, video consultations with agricultural experts, real-time chat, one-on-one interactions, and up-to-date information tailored to the farmer's needs.",
+  },
+];
