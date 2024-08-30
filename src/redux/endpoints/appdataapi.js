@@ -39,6 +39,15 @@ const Appdataendpoints = Apiservices.injectEndpoints({
         credentials: "include",
       }),
     }),
+    sendMailtoOrganization: build.mutation({
+      query: (msgs) => ({
+        url: `/mail/send-message`,
+        method: "POST",
+        headers,
+        body: msgs,
+        credentials: "include",
+      }),
+    }),
     getallMessages: build.query({
       query: () => ({
         url: `/community/messages`,
@@ -56,4 +65,5 @@ export const {
   useGetLocalMarketNameMutation,
   useGetMarketDataMutation,
   useGetallMessagesQuery,
+  useSendMailtoOrganizationMutation,
 } = Appdataendpoints;

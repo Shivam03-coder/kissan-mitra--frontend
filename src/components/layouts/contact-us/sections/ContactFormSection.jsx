@@ -1,8 +1,18 @@
 import React from "react";
-import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import {
+  Button,
+  Input,
+  Spinner,
+  Textarea,
+  Typography,
+} from "@material-tailwind/react";
 import { useFormik } from "formik";
 import { contactUsFormSchema } from "../../../shared/validation/FormsValidation";
 import MapSection from "./MapSection";
+import { useSendMailtoOrganizationMutation } from "../../../../redux/endpoints/appdataapi";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const initialValues = {
   firstName: "",
   lastName: "",
@@ -12,18 +22,28 @@ const initialValues = {
 };
 
 const ContactFormSection = () => {
+  const [SendMessage, { isLoading }] = useSendMailtoOrganizationMutation();
   const formik = useFormik({
     initialValues,
     validationSchema: contactUsFormSchema,
-    onSubmit: (values, action) => {
-      alert(JSON.stringify(values, null, 2));
-      action.resetForm();
+    onSubmit: async (values, action) => {
+      try {
+        await SendMessage(values);
+        toast.success("Mail Sent Sucessfully.");
+        action.resetForm();
+      } catch (error) {
+        console.log(error);
+        toast.error("Failed to Send Mail.");
+      }
     },
   });
 
   return (
     <section className="grid md:grid-cols-2 gap-7  py-8">
-      <form onSubmit={formik.handleSubmit} className="space-y-6 w-[95%] mx-auto order-2 md:order-1 mt-6 md:mt-0">
+      <form
+        onSubmit={formik.handleSubmit}
+        className="space-y-6 w-[95%] mx-auto order-2 md:order-1 mt-6 md:mt-0"
+      >
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
           <div className="space-y-2 w-full md:w-auto">
             <Typography className="text-[1rem] font-Inter font-medium opacity-70">
@@ -157,8 +177,8 @@ const ContactFormSection = () => {
             <div className="text-red-500 text-sm">{formik.errors.message}</div>
           ) : null}
         </div>
-        <Button type="submit" color="green" className="text-black text-sm">
-          SEND MESSAGE
+        <Button type="submit" color="green" className="text-black text-sm flex-center">
+          {isLoading ? <Spinner className="h-6 w-6" /> : "SEND MESSAGE"}
         </Button>
       </form>
       <section className="place-self-center order-1 mb-5 md:mb-0">
